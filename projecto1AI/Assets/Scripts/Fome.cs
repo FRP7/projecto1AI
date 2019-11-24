@@ -6,14 +6,15 @@ public class Fome : MonoBehaviour
 {
     public float start = 2.0f;
     public float frequency = 5f;
-
     public bool isInvoke = false;
+    public Pathfinder agenteinstance;
 
     private void Start() {
-       /* if(isInvoke == true) {
-            Invoke();
-            isInvoke = false;
-        }*/
+        /* if(isInvoke == true) {
+             Invoke();
+             isInvoke = false;
+         }*/
+        agenteinstance = GameObject.FindWithTag("Agent").GetComponent<Pathfinder>();
     }
 
     public void FixedUpdate() {
@@ -27,12 +28,20 @@ public class Fome : MonoBehaviour
 
     public void FomeFunction() {
         Debug.Log("Fome");
+        agenteinstance.Restaurante();
         isInvoke = false;
     }
 
     public void Invoke() {
         InvokeRepeating("FomeFunction", start, frequency);
         //isInvoke = false;
+    }
+
+    private void OnCollisionEnter(Collision collision) {
+        if(collision.gameObject.name == "goal1") {
+            Debug.Log("Vais comer");
+            agenteinstance.Concerto();
+        }
     }
 
 }
