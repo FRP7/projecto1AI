@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class Fome : MonoBehaviour
 {
-    public float start = 2.0f;
+   /* public float start = 2.0f;
     public float frequency = 5f;
-    public bool isInvoke = false;
+    public bool isInvoke = false;*/
     public Pathfinder agenteinstance;
 
     private void Start() {
@@ -39,16 +39,16 @@ public class Fome : MonoBehaviour
 
     }
 
-    public void FomeFunction() {
+    /*public void FomeFunction() {
         Debug.Log("Fome");
         //agenteinstance.Restaurante();
         //agenteinstance.State = 1;
         isInvoke = false;
-    }
+    }*/
 
-    public void Invoke() {
+    /*public void Invoke() {
         InvokeRepeating("FomeFunction", start, frequency);
-    }
+    }*/
 
     private void OnCollisionEnter(Collision collision) {
         if(collision.gameObject.name == "goal1") {

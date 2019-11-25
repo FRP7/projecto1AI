@@ -28,9 +28,9 @@ public class Pathfinder : MonoBehaviour
             case 2:
                 Jardim();
                 break;
-            case 3:
+            /*case 3:
                 Concerto();
-                break;
+                break;*/
             default:
                 Concerto();
                 break;
