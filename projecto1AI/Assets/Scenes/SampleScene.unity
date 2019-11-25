@@ -2697,7 +2697,7 @@ NavMeshAgent:
   m_AngularSpeed: 120
   m_StoppingDistance: 0
   m_AutoTraverseOffMeshLink: 1
-  m_AutoBraking: 1
+  m_AutoBraking: 0
   m_AutoRepath: 1
   m_Height: 2
   m_BaseOffset: 1
@@ -2719,6 +2719,7 @@ MonoBehaviour:
   goal2: {fileID: 1505835671}
   goal3: {fileID: 1343960703}
   agent: {fileID: 2093107038}
+  State: 0
 --- !u!114 &2093107040
 MonoBehaviour:
   m_ObjectHideFlags: 0

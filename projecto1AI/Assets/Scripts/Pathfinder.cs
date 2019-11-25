@@ -39,12 +39,15 @@ public class Pathfinder : MonoBehaviour
 
     public void Restaurante() {
         agent.destination = goal1.transform.position;
+        return;
     }
     public void Jardim() {
         agent.destination = goal2.transform.position;
+        return;
     }
 
     public void Concerto() {
         agent.destination = goal3.transform.position;
+        return;
     }
 }
