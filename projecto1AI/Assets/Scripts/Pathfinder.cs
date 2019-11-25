@@ -9,6 +9,7 @@ public class Pathfinder : MonoBehaviour
     public GameObject goal2;
     public GameObject goal3;
     public NavMeshAgent agent;
+    public int State;
     // Start is called before the first frame update
     void Start() {
         goal1 = GameObject.Find("goal1");
@@ -18,8 +19,22 @@ public class Pathfinder : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update() {
+    void FixedUpdate() {
         //agent.destination = goal2.transform.position;
+        switch (State) {
+            case 1:
+                Restaurante();
+                break;
+            case 2:
+                Jardim();
+                break;
+            case 3:
+                Concerto();
+                break;
+            default:
+                Concerto();
+                break;
+        }
     }
 
     public void Restaurante() {

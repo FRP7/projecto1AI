@@ -18,29 +18,43 @@ public class Fome : MonoBehaviour
     }
 
     public void FixedUpdate() {
-        if (isInvoke == true) {
+       /* if (isInvoke == true) {
            Invoke();
         }
         if(isInvoke == false) {
             CancelInvoke();
-        }
+        }*/
+
+        /*switch(agenteinstance.State) {
+            case 1:
+                Debug.Log("Case1");
+                break;
+            case 2:
+                Debug.Log("Case2");
+                break;
+            default:
+                Debug.Log("Default");
+                break;
+        }*/
+
     }
 
     public void FomeFunction() {
         Debug.Log("Fome");
-        agenteinstance.Restaurante();
+        //agenteinstance.Restaurante();
+        //agenteinstance.State = 1;
         isInvoke = false;
     }
 
     public void Invoke() {
         InvokeRepeating("FomeFunction", start, frequency);
-        //isInvoke = false;
     }
 
     private void OnCollisionEnter(Collision collision) {
         if(collision.gameObject.name == "goal1") {
             Debug.Log("Vais comer");
-            agenteinstance.Concerto();
+            //agenteinstance.Concerto();
+            agenteinstance.State = 0;
         }
     }
 
