@@ -7,14 +7,14 @@ public class Fome : MonoBehaviour
    /* public float start = 2.0f;
     public float frequency = 5f;
     public bool isInvoke = false;*/
-    public Pathfinder agenteinstance;
+    public StateMachineMain agenteinstance;
 
     private void Start() {
         /* if(isInvoke == true) {
              Invoke();
              isInvoke = false;
          }*/
-        agenteinstance = GameObject.FindWithTag("Agent").GetComponent<Pathfinder>();
+        agenteinstance = GameObject.FindWithTag("Agent").GetComponent<StateMachineMain>();
     }
 
     public void FixedUpdate() {

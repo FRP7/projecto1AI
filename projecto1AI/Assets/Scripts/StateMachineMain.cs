@@ -3,11 +3,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Pathfinder : MonoBehaviour
+public class StateMachineMain : MonoBehaviour
 {
     public GameObject goal1;
     public GameObject goal2;
-    public GameObject goal3;
+    public GameObject goal0;
     //public GameObject goal4;
     public NavMeshAgent agent;
     public int State;
@@ -15,7 +15,7 @@ public class Pathfinder : MonoBehaviour
     void Start() {
         goal1 = GameObject.Find("goal1");
         goal2 = GameObject.Find("goal2");
-        goal3 = GameObject.Find("goal3");
+        goal0 = GameObject.Find("goal0");
         agent = GameObject.FindWithTag("Agent").GetComponent<NavMeshAgent>();
     }
 
@@ -45,7 +45,7 @@ public class Pathfinder : MonoBehaviour
     }
 
     public void Concerto() {
-        agent.destination = goal3.transform.position;
+        agent.destination = goal0.transform.position;
         return;
     }
 	

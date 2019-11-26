@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class Descansar : MonoBehaviour
 {
-    public Pathfinder agenteinstance;
+    public StateMachineMain agenteinstance;
 
     private void Start() {
-        agenteinstance = GameObject.FindWithTag("Agent").GetComponent<Pathfinder>();
+        agenteinstance = GameObject.FindWithTag("Agent").GetComponent<StateMachineMain>();
     }
 
 
