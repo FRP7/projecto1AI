@@ -2717,9 +2717,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   goal1: {fileID: 1239061022}
-  goal2: {fileID: 0}
+  goal2: {fileID: 287629386}
   goal3: {fileID: 1343960703}
-  goal4: {fileID: 287629386}
   agent: {fileID: 2093107038}
   State: 0
 --- !u!114 &2093107040

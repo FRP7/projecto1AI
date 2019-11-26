@@ -8,14 +8,14 @@ public class Pathfinder : MonoBehaviour
     public GameObject goal1;
     public GameObject goal2;
     public GameObject goal3;
-    public GameObject goal4;
+    //public GameObject goal4;
     public NavMeshAgent agent;
     public int State;
     // Start is called before the first frame update
     void Start() {
         goal1 = GameObject.Find("goal1");
         goal2 = GameObject.Find("goal2");
-        goal2 = GameObject.Find("goal2");
+        goal3 = GameObject.Find("goal3");
         agent = GameObject.FindWithTag("Agent").GetComponent<NavMeshAgent>();
     }
 
@@ -48,4 +48,5 @@ public class Pathfinder : MonoBehaviour
         agent.destination = goal3.transform.position;
         return;
     }
+	
 }
