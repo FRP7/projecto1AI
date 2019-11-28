@@ -8,22 +8,24 @@ public class Fome : MonoBehaviour
     public float frequency = 5f;
     public bool isInvoke = false;*/
     public StateMachineMain agenteinstance;
+    public float HungerLevel = 15f;
 
     private void Start() {
         /* if(isInvoke == true) {
              Invoke();
              isInvoke = false;
          }*/
-        agenteinstance = GameObject.FindWithTag("Agent").GetComponent<StateMachineMain>();
+        agenteinstance = gameObject.GetComponent<StateMachineMain>();
+        HungerLevel = Random.Range(10f, 30f);
     }
 
     public void FixedUpdate() {
-       /* if (isInvoke == true) {
-           Invoke();
-        }
-        if(isInvoke == false) {
-            CancelInvoke();
-        }*/
+        /* if (isInvoke == true) {
+            Invoke();
+         }
+         if(isInvoke == false) {
+             CancelInvoke();
+         }*/
 
         /*switch(agenteinstance.State) {
             case 1:
@@ -36,7 +38,15 @@ public class Fome : MonoBehaviour
                 Debug.Log("Default");
                 break;
         }*/
-
+        if (HungerLevel > 0f)
+        {
+            HungerLevel -= Time.deltaTime;
+        }
+        else
+        {
+            HungerLevel = 0f;
+            agenteinstance.State = 1;
+        }
     }
 
     /*public void FomeFunction() {
@@ -53,12 +63,12 @@ public class Fome : MonoBehaviour
     private void OnCollisionEnter(Collision collision) {
         if(collision.gameObject.name == "goal1") {
             Debug.Log("Vais comer");
-            //agenteinstance.Concerto();
+            HungerLevel = Random.Range(50f, 70f);
             agenteinstance.State = 0;
         }
         if (collision.gameObject.name == "goal11") {
             Debug.Log("Vais comer");
-            //agenteinstance.Concerto();
+            HungerLevel = Random.Range(50f, 70f);
             agenteinstance.State = 0;
         }
     }
