@@ -56,6 +56,11 @@ public class Fome : MonoBehaviour
             //agenteinstance.Concerto();
             agenteinstance.State = 0;
         }
+        if (collision.gameObject.name == "goal11") {
+            Debug.Log("Vais comer");
+            //agenteinstance.Concerto();
+            agenteinstance.State = 0;
+        }
     }
 
 }

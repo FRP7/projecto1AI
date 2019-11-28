@@ -16,5 +16,9 @@ public class Descansar : MonoBehaviour
             Debug.Log("Vais descansar");
             agenteinstance.State = 0;
         }
+        if (collision.gameObject.name == "goal22") {
+            Debug.Log("Vais descansar");
+            agenteinstance.State = 0;
+        }
     }
 }
