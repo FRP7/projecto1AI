@@ -4,73 +4,50 @@ using UnityEngine;
 
 public class Fome : MonoBehaviour
 {
-   /* public float start = 2.0f;
-    public float frequency = 5f;
-    public bool isInvoke = false;*/
     public StateMachineMain agenteinstance;
     public float HungerLevel = 15f;
+    public bool Eating = false;
 
     private void Start() {
-        /* if(isInvoke == true) {
-             Invoke();
-             isInvoke = false;
-         }*/
         agenteinstance = gameObject.GetComponent<StateMachineMain>();
         HungerLevel = Random.Range(10f, 30f);
     }
 
-    public void FixedUpdate() {
-        /* if (isInvoke == true) {
-            Invoke();
-         }
-         if(isInvoke == false) {
-             CancelInvoke();
-         }*/
-
-        /*switch(agenteinstance.State) {
-            case 1:
-                Debug.Log("Case1");
-                break;
-            case 2:
-                Debug.Log("Case2");
-                break;
-            default:
-                Debug.Log("Default");
-                break;
-        }*/
-        if (HungerLevel > 0f)
+    public void FixedUpdate()
+    {
+        if (HungerLevel > 0f && Eating == false)
         {
-            HungerLevel -= Time.deltaTime;
+            HungerLevel -= Time.fixedDeltaTime;
         }
-        else
+
+        else if (agenteinstance.State == 0)
         {
             HungerLevel = 0f;
             agenteinstance.State = 1;
         }
-    }
 
-    /*public void FomeFunction() {
-        Debug.Log("Fome");
-        //agenteinstance.Restaurante();
-        //agenteinstance.State = 1;
-        isInvoke = false;
-    }*/
-
-    /*public void Invoke() {
-        InvokeRepeating("FomeFunction", start, frequency);
-    }*/
-
-    private void OnCollisionEnter(Collision collision) {
-        if(collision.gameObject.name == "goal1") {
-            Debug.Log("Vais comer");
-            HungerLevel = Random.Range(50f, 70f);
-            agenteinstance.State = 0;
+        if (HungerLevel < 60f && Eating)
+        {
+            Debug.Log("Eating...");
+            HungerLevel += (Random.Range(5f, 10f) * Time.fixedDeltaTime);
         }
-        if (collision.gameObject.name == "goal11") {
-            Debug.Log("Vais comer");
-            HungerLevel = Random.Range(50f, 70f);
+        else if (HungerLevel >= 60f)
+        {
+            HungerLevel = 60f;
+            Eating = false;
             agenteinstance.State = 0;
         }
     }
 
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.name == "goal1")
+        {
+            Eating = true;
+        }
+        if (other.gameObject.name == "goal11")
+        {
+            Eating = true;
+        }
+    }
 }
