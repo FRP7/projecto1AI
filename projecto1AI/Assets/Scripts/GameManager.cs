@@ -6,10 +6,11 @@ public class GameManager : MonoBehaviour
 {
 
     public Transform agenteprefab;
+    public int agentnumber = 100;
 
-    void Start()
+    void Awake()
     {
-        for(int i = 0; i < 100; i++) {
+        for(int i = 0; i < agentnumber; i++) {
             Instantiate(agenteprefab, new Vector3(0f, 6f, 26.6f), Quaternion.identity);
         }
     }
