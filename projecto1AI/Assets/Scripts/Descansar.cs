@@ -9,7 +9,7 @@ public class Descansar : MonoBehaviour
     public bool Resting = false;
 
     private void Start() {
-        agenteinstance = GameObject.FindWithTag("Agent").GetComponent<StateMachineMain>();
+        agenteinstance = gameObject.GetComponent<StateMachineMain>();
         RestLevel = Random.Range(30f, 50f);
     }
 

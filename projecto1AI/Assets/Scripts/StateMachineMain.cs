@@ -21,7 +21,8 @@ public class StateMachineMain : MonoBehaviour
         goal22 = GameObject.Find("goal22");
         goal0 = GameObject.Find("goal0");
         goal00 = GameObject.Find("goal00");
-        agent = GameObject.FindWithTag("Agent").GetComponent<NavMeshAgent>();
+        //agent = GameObject.FindWithTag("Agent").GetComponent<NavMeshAgent>();
+        agent = gameObject.GetComponent<NavMeshAgent>();
     }
 
     void FixedUpdate() {
@@ -39,7 +40,7 @@ public class StateMachineMain : MonoBehaviour
     }
 
     public void Restaurante() {
-        agent.destination = goal11.transform.position;
+        agent.destination = goal1.transform.position;
         return;
     }
     public void Jardim() {
