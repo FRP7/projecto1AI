@@ -11,10 +11,9 @@ public class StateMachineMain : MonoBehaviour
     public GameObject goal22;
     public GameObject goal0;
     public GameObject goal00;
-    //public GameObject goal4;
     public NavMeshAgent agent;
     public int State;
-    // Start is called before the first frame update
+
     void Start() {
         goal1 = GameObject.Find("goal1");
         goal11 = GameObject.Find("goal11");
@@ -25,9 +24,7 @@ public class StateMachineMain : MonoBehaviour
         agent = GameObject.FindWithTag("Agent").GetComponent<NavMeshAgent>();
     }
 
-    // Update is called once per frame
     void FixedUpdate() {
-        //agent.destination = goal2.transform.position;
         switch (State) {
             case 1:
                 Restaurante();
@@ -42,15 +39,7 @@ public class StateMachineMain : MonoBehaviour
     }
 
     public void Restaurante() {
-        //agent.destination = goal11.transform.position;
-        int rndrestaurante;
-        rndrestaurante = Random.Range(1, 4);
-        //Debug.Log(rndrestaurante);
-        if(rndrestaurante > 2) {
-            agent.destination = goal11.transform.position;
-        } else if(rndrestaurante < 2) {
-            agent.destination = goal1.transform.position;
-        }
+        agent.destination = goal11.transform.position;
         return;
     }
     public void Jardim() {
