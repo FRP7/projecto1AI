@@ -6,22 +6,15 @@ using UnityEngine;
 public class StateMachineMain : MonoBehaviour
 {
     public GameObject goal1;
-    public GameObject goal11;
     public GameObject goal2;
-    public GameObject goal22;
     public GameObject goal0;
-    public GameObject goal00;
     public NavMeshAgent agent;
     public int State;
 
     void Start() {
         goal1 = GameObject.Find("goal1");
-        goal11 = GameObject.Find("goal11");
         goal2 = GameObject.Find("goal2");
-        goal22 = GameObject.Find("goal22");
         goal0 = GameObject.Find("goal0");
-        goal00 = GameObject.Find("goal00");
-        //agent = GameObject.FindWithTag("Agent").GetComponent<NavMeshAgent>();
         agent = gameObject.GetComponent<NavMeshAgent>();
     }
 

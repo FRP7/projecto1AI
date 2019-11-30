@@ -28,7 +28,7 @@ public class Fome : MonoBehaviour
 
         if (HungerLevel < 60f && Eating)
         {
-            Debug.Log("Eating...");
+            //Debug.Log("Eating...");
             HungerLevel += (Random.Range(5f, 10f) * Time.fixedDeltaTime);
         }
         else if (HungerLevel >= 60f)

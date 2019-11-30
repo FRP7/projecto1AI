@@ -28,7 +28,7 @@ public class Descansar : MonoBehaviour
 
         if (RestLevel < 100f && Resting)
         {
-            Debug.Log("Resting...");
+            //Debug.Log("Resting...");
             RestLevel += (Random.Range(5f, 10f) * Time.fixedDeltaTime);
         }
         else if (RestLevel >= 100f)
