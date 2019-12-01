@@ -10,6 +10,7 @@ public class JardimBehaviour : MonoBehaviour
     private Transform target;  //wander
     private NavMeshAgent navagent;  ///wander
     private float timer; //wander
+    private NavMeshObstacle myObstacle; ///afastar de outros agentes
 
     public Transform agentes; //flee
     public int JardimState = 2;
@@ -19,6 +20,7 @@ public class JardimBehaviour : MonoBehaviour
         agentes = GameObject.FindWithTag("Agent").transform; //flee
         navagent = GameObject.FindWithTag("Agent").GetComponent<NavMeshAgent>(); //wander
         timer = wanderTime; //wander
+        myObstacle = GetComponent<NavMeshObstacle>(); ///afastar de outros agentes
     }
     private void OnTriggerStay(Collider other) {
         if (other.gameObject.name == "goal2") {
@@ -39,17 +41,17 @@ public class JardimBehaviour : MonoBehaviour
                 EvitarAgentes();
                 break;
             case 2:
+                myObstacle.enabled = false; ///afastar de outros agentes
                 break;
             default:
+                myObstacle.enabled = false; ///afastar de outros agentes
                 break;
         }
     }
 
     public void EvitarAgentes() {
-        Debug.Log("Vou evitar agentes");
-        Vector3 linear = Vector3.zero;
-        linear = transform.position - agentes.transform.position;
-        transform.Translate(linear * Time.deltaTime); ///flee
+ 
+        myObstacle.enabled = true; ///afastar de outros agentes
 
         timer += Time.deltaTime; //wander
 
