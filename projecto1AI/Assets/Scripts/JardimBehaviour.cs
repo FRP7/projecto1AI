@@ -1,15 +1,24 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class JardimBehaviour : MonoBehaviour
 {
-    public Transform agentes;
+    public float wanderRadius;  //wander
+    public float wanderTime;   //wander
+    private Transform target;  //wander
+    private NavMeshAgent navagent;  ///wander
+    private float timer; //wander
+
+    public Transform agentes; //flee
     public int JardimState = 2;
-    public int maxSpeed;
+    public int maxSpeed; //flee
 
     public void Start() {
-        agentes = GameObject.FindWithTag("Agent").transform;
+        agentes = GameObject.FindWithTag("Agent").transform; //flee
+        navagent = GameObject.FindWithTag("Agent").GetComponent<NavMeshAgent>(); //wander
+        timer = wanderTime; //wander
     }
     private void OnTriggerStay(Collider other) {
         if (other.gameObject.name == "goal2") {
@@ -40,6 +49,26 @@ public class JardimBehaviour : MonoBehaviour
         Debug.Log("Vou evitar agentes");
         Vector3 linear = Vector3.zero;
         linear = transform.position - agentes.transform.position;
-        transform.Translate(linear * Time.deltaTime); 
+        transform.Translate(linear * Time.deltaTime); ///flee
+
+        timer += Time.deltaTime; //wander
+
+        if(timer >= wanderTime) {
+            Vector3 newPos = RandomNavSphere(transform.position, wanderRadius, -1);
+            navagent.SetDestination(newPos);
+            timer = 0;  //wander
+        }
+    }
+
+    public static Vector3 RandomNavSphere(Vector3 origin, float dist, int layermask) {
+        Vector3 randDirection = Random.insideUnitSphere * dist;
+
+        randDirection += origin;
+
+        NavMeshHit navHit;
+
+        NavMesh.SamplePosition(randDirection, out navHit, dist, layermask);
+
+        return navHit.position;  //wander
     }
 }
