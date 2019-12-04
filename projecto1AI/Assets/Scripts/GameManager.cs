@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-
     public Transform agenteprefab;
     public int agentnumber = 100;
 

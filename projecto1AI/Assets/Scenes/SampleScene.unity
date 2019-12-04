@@ -417,13 +417,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 129136b59972c5f44a259f948dee5039, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  wanderRadius: 0
-  wanderTime: 0
-  agentes: {fileID: 1709709603}
   JardimState: 2
-  maxSpeed: 0
-  isOnJardim: 0
-  stopdistance: 15
 --- !u!4 &232878449 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 617036455641393634, guid: 9378e5dc3a3587141bbcf407d0ca8044,
@@ -641,8 +635,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 287629386}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -34.6, y: 0.51, z: 26.4}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -34.6, y: -0.4, z: 26.4}
+  m_LocalScale: {x: 28.6092, y: 1, z: 59.88238}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 9
@@ -1997,7 +1991,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!65 &1104544236
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3588,12 +3582,6 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: 0}
   m_TimeToStationary: 0.5
---- !u!4 &1709709603 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 617036455641393634, guid: 9378e5dc3a3587141bbcf407d0ca8044,
-    type: 3}
-  m_PrefabInstance: {fileID: 1548673718}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1740114764
 GameObject:
   m_ObjectHideFlags: 0

@@ -8,14 +8,23 @@ public class StateMachineMain : MonoBehaviour
     public GameObject goal1;
     public GameObject goal2;
     public GameObject goal0;
+    public GameObject goal00;
     public NavMeshAgent agent;
     public int State;
+
+    //palco
+    int palco;
+    //
 
     void Start() {
         goal1 = GameObject.Find("goal1");
         goal2 = GameObject.Find("goal2");
         goal0 = GameObject.Find("goal0");
+        goal00 = GameObject.Find("goal00");
         agent = gameObject.GetComponent<NavMeshAgent>();
+        //palco 
+        palco = Random.Range(0, 2);
+        //
     }
 
     void FixedUpdate() {
@@ -42,7 +51,13 @@ public class StateMachineMain : MonoBehaviour
     }
 
     public void Concerto() {
-        agent.destination = goal0.transform.position;
+        ///sorteia qual é o palco que vai
+        if(palco > 0) {
+            agent.destination = goal0.transform.position;
+        }
+        if(palco == 0) {
+            agent.destination = goal00.transform.position;
+        }
         return;
     }
 	

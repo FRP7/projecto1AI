@@ -1,14 +1,18 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class Fome : MonoBehaviour
 {
     public StateMachineMain agenteinstance;
+
     public float HungerLevel = 15f;
     public bool Eating = false;
+    public NavMeshAgent agent;
 
     private void Start() {
+        agent = gameObject.GetComponent<NavMeshAgent>();
         agenteinstance = gameObject.GetComponent<StateMachineMain>();
         HungerLevel = Random.Range(10f, 30f);
     }
@@ -44,10 +48,8 @@ public class Fome : MonoBehaviour
         if (other.gameObject.name == "goal1")
         {
             Eating = true;
-        }
-        if (other.gameObject.name == "goal11")
-        {
-            Eating = true;
+            agent.isStopped = true;
+            agent.ResetPath();
         }
     }
 }
