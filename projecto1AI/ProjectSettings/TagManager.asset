@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Agent
   - goal
+  - jardimtrigger
   layers:
   - Default
   - TransparentFX

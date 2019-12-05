@@ -10,6 +10,7 @@ public class Descansar : MonoBehaviour
 
     private void Start() {
         agenteinstance = gameObject.GetComponent<StateMachineMain>();
+
         RestLevel = Random.Range(30f, 50f);
     }
 
@@ -42,10 +43,6 @@ public class Descansar : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.name == "goal2")
-        {
-            Resting = true;
-        }
-        if (other.gameObject.name == "goal22")
         {
             Resting = true;
         }

@@ -1,30 +1,35 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class zonatrigger : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public bool zona1;
+    public bool zona2;
+    public JardimBehaviour JardimBehaviourinstance;
+    public NavMeshAgent NavAgent;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+    public void Awake() {
+        JardimBehaviourinstance = GameObject.FindWithTag("Agent").GetComponent<JardimBehaviour>();
+        NavAgent = GameObject.FindWithTag("Agent").GetComponent<NavMeshAgent>();
     }
 
     private void OnTriggerEnter(Collider collision) {
-        if(collision.gameObject.tag == "Agent") {
-            Debug.Log("Entrou");
+        if(collision.gameObject.tag == "Agent" && zona1 == true) {
+            JardimBehaviourinstance.agentnumber[0] += 1;
+        }
+        if (collision.gameObject.tag == "Agent" && zona2 == true) {
+            JardimBehaviourinstance.agentnumber[1] += 1;
         }
     }
 
     private void OnTriggerExit(Collider leave) {
-        if(leave.gameObject.tag == "Agent") {
-            Debug.Log("Saiu");
+        if(leave.gameObject.tag == "Agent" && zona1 == true) {
+            JardimBehaviourinstance.agentnumber[0] -= 1;
+        }
+        if (leave.gameObject.tag == "Agent" && zona2 == true) {
+            JardimBehaviourinstance.agentnumber[1] -= 1;
         }
     }
 }

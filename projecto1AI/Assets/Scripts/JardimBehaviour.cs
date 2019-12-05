@@ -6,9 +6,13 @@ using UnityEngine.AI;
 public class JardimBehaviour : MonoBehaviour
 {
     public int JardimState = 2;
+    public NavMeshAgent NavAgent;
+    public int[] agentnumber;
+    public GameObject zona1;
 
     public void Start() {
-
+        NavAgent = GetComponent<NavMeshAgent>();
+        zona1 = GameObject.Find("zona1");
     }
     private void OnTriggerStay(Collider other) {
         if (other.gameObject.name == "goal2") {
@@ -26,7 +30,7 @@ public class JardimBehaviour : MonoBehaviour
 
         switch(JardimState) {
             case 1:
-                EvitarAgentes();
+                GoToZone();
                 break;
             case 2:
                 break;
@@ -35,8 +39,8 @@ public class JardimBehaviour : MonoBehaviour
         }
     }
 
-    public void EvitarAgentes() {
-
+    public void GoToZone() {
+    
     }
 
 
