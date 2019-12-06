@@ -10,11 +10,13 @@ public class Fome : MonoBehaviour
     public float HungerLevel = 15f;
     public bool Eating = false;
     public NavMeshAgent agent;
+    public FomeBehaviour FBinstance;
 
     private void Start() {
         agent = gameObject.GetComponent<NavMeshAgent>();
         agenteinstance = gameObject.GetComponent<StateMachineMain>();
         HungerLevel = Random.Range(10f, 30f);
+        FBinstance = gameObject.GetComponent<FomeBehaviour>();
     }
 
     public void FixedUpdate()
@@ -39,6 +41,7 @@ public class Fome : MonoBehaviour
         {
             HungerLevel = 60f;
             Eating = false;
+            FBinstance.FomeState = 0;
             agenteinstance.State = 0;
         }
     }
@@ -50,6 +53,7 @@ public class Fome : MonoBehaviour
             Eating = true;
             agent.isStopped = true;
             agent.ResetPath();
+            FBinstance.FomeState = 1;  //aqui é onde chamas um state qualquer do fome behaviour
         }
     }
 }

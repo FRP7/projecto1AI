@@ -5,7 +5,7 @@ using UnityEngine.AI;
 
 public class JardimBehaviour : MonoBehaviour
 {
-    public int JardimState = 2;
+    public int JardimState;
     public NavMeshAgent NavAgent;
     public int[] agentnumber;
     public GameObject zona1;
@@ -31,11 +31,13 @@ public class JardimBehaviour : MonoBehaviour
 
         switch(JardimState) {
             case 1:
-                GoToZone();
+                //GoToZone();
+                //Debug.Log("Jardim behaviour");
                 break;
             case 2:
                 break;
             default:
+                ///não metas nada aqui
                 break;
         }
     }
