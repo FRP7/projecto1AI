@@ -48,9 +48,8 @@ public class Fome : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.name == "Restaurante1")
+        if (other.gameObject.name == "Restaurante1" && HungerLevel == 0)
         {
-            Eating = true;
             agent.isStopped = true;
             agent.ResetPath();
             FBinstance.FomeState = 1;  //aqui é onde chamas um state qualquer do fome behaviour
