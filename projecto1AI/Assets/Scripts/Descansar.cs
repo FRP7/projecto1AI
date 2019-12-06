@@ -42,7 +42,7 @@ public class Descansar : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.name == "goal2")
+        if (other.gameObject.name == "Jardim1")
         {
             Resting = true;
         }

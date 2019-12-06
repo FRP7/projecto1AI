@@ -45,7 +45,7 @@ public class Fome : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.name == "goal1")
+        if (other.gameObject.name == "Restaurante1")
         {
             Eating = true;
             agent.isStopped = true;

@@ -14,14 +14,15 @@ public class JardimBehaviour : MonoBehaviour
         NavAgent = GetComponent<NavMeshAgent>();
         zona1 = GameObject.Find("zona1");
     }
+
     private void OnTriggerStay(Collider other) {
-        if (other.gameObject.name == "goal2") {
+        if (other.gameObject.name == "Jardim1") {
             JardimState = 1;
         } 
     }
 
     private void OnTriggerExit(Collider other) {
-        if(other.gameObject.name == "goal2") {
+        if(other.gameObject.name == "Jardim1") {
             JardimState = 2;
         }
     }

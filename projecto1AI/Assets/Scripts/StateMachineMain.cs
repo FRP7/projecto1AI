@@ -5,26 +5,19 @@ using UnityEngine;
 
 public class StateMachineMain : MonoBehaviour
 {
-    public GameObject goal1;
-    public GameObject goal2;
-    public GameObject goal0;
-    public GameObject goal00;
+    public GameObject Palco1;
+    public GameObject Palco2;
+    public GameObject Restaurante1;
+    public GameObject Jardim1;
     public NavMeshAgent agent;
     public int State;
-
-    //palco
+    
     int palco;
-    //
 
     void Start() {
-        goal1 = GameObject.Find("goal1");
-        goal2 = GameObject.Find("goal2");
-        goal0 = GameObject.Find("goal0");
-        goal00 = GameObject.Find("goal00");
         agent = gameObject.GetComponent<NavMeshAgent>();
-        //palco 
+
         palco = Random.Range(0, 2);
-        //
     }
 
     void FixedUpdate() {
@@ -42,23 +35,22 @@ public class StateMachineMain : MonoBehaviour
     }
 
     public void Restaurante() {
-        agent.destination = goal1.transform.position;
+        agent.destination = Restaurante1.transform.position;
         return;
     }
     public void Jardim() {
-        agent.destination = goal2.transform.position;
+        agent.destination = Jardim1.transform.position;
         return;
     }
 
     public void Concerto() {
         ///sorteia qual é o palco que vai
         if(palco > 0) {
-            agent.destination = goal0.transform.position;
+            agent.destination = Palco1.transform.position;
         }
         if(palco == 0) {
-            agent.destination = goal00.transform.position;
+            agent.destination = Palco2.transform.position;
         }
         return;
     }
-	
 }
