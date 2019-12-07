@@ -18,9 +18,11 @@ public class zonatrigger : MonoBehaviour
     private void OnTriggerEnter(Collider collision) {
         if(collision.gameObject.tag == "Agent" && zona1 == true) {
             JardimBehaviourinstance.agentnumber[0] += 1;
+            NavAgent.ResetPath();
         }
         if (collision.gameObject.tag == "Agent" && zona2 == true) {
             JardimBehaviourinstance.agentnumber[1] += 1;
+            NavAgent.ResetPath();
         }
     }
 

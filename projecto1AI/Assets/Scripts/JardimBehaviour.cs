@@ -15,15 +15,22 @@ public class JardimBehaviour : MonoBehaviour
         zona1 = GameObject.Find("zona1");
     }
 
-    private void OnTriggerStay(Collider other) {
-        if (other.gameObject.name == "Jardim1") {
-            JardimState = 1;
-        } 
-    }
+    /* private void OnTriggerStay(Collider other) {
+         if (other.gameObject.name == "Jardim1") {
+             JardimState = 1;
+         } 
+     }*/
 
-    private void OnTriggerExit(Collider other) {
+    /* private void OnTriggerExit(Collider other) {
+         if(other.gameObject.name == "Jardim1") {
+             JardimState = 2;
+         }
+     }*/
+
+    private void OnTriggerEnter(Collider other) {
         if(other.gameObject.name == "Jardim1") {
-            JardimState = 2;
+            NavAgent.ResetPath();
+            JardimState = 1;
         }
     }
 
@@ -31,7 +38,7 @@ public class JardimBehaviour : MonoBehaviour
 
         switch(JardimState) {
             case 1:
-                //GoToZone();
+                GoToZone();
                 //Debug.Log("Jardim behaviour");
                 break;
             case 2:
@@ -43,7 +50,7 @@ public class JardimBehaviour : MonoBehaviour
     }
 
     public void GoToZone() {
-    
+        NavAgent.destination = zona1.transform.position;
     }
 
 
