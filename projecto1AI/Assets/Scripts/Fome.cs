@@ -5,12 +5,11 @@ using UnityEngine.AI;
 
 public class Fome : MonoBehaviour
 {
+    public NavMeshAgent agent;
     public StateMachineMain agenteinstance;
-
+    public FomeBehaviour FBinstance;
     public float HungerLevel = 15f;
     public bool Eating = false;
-    public NavMeshAgent agent;
-    public FomeBehaviour FBinstance;
 
     private void Start() {
         agent = GetComponent<NavMeshAgent>();
@@ -22,9 +21,7 @@ public class Fome : MonoBehaviour
     public void FixedUpdate()
     {
         if (HungerLevel > 0f && Eating == false)
-        {
             HungerLevel -= Time.fixedDeltaTime;
-        }
 
         else if (agenteinstance.State == 0)
         {
@@ -33,10 +30,8 @@ public class Fome : MonoBehaviour
         }
 
         if (HungerLevel < 100f && Eating)
-        {
-            //Debug.Log("Eating...");
-            HungerLevel += (Random.Range(5f, 20f) * Time.fixedDeltaTime);
-        }
+            HungerLevel += (Random.Range(5f, 10f) * Time.fixedDeltaTime);
+
         else if (HungerLevel >= 100f)
         {
             HungerLevel = 100f;
@@ -55,7 +50,7 @@ public class Fome : MonoBehaviour
         {
             agent.isStopped = true;
             agent.ResetPath();
-            FBinstance.FomeState = 1;  //aqui é onde chamas um state qualquer do fome behaviour
+            FBinstance.FomeState = 1;
         }
     }
 }

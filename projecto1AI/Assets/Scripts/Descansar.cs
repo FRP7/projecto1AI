@@ -5,28 +5,24 @@ using UnityEngine.AI;
 
 public class Descansar : MonoBehaviour
 {
+    public NavMeshAgent agent;
     public StateMachineMain agenteinstance;
+    public JardimBehaviour JBinstance;
     public float RestLevel = 15f;
     public bool Resting = false;
-    public JardimBehaviour JBinstance;
-    public NavMeshAgent agent;
 
-    private void Start() {
-        agenteinstance = gameObject.GetComponent<StateMachineMain>();
-
-        RestLevel = Random.Range(30f, 50f);
-
-        JBinstance = gameObject.GetComponent<JardimBehaviour>();
-
+    private void Start()
+    {
         agent = gameObject.GetComponent<NavMeshAgent>();
+        agenteinstance = gameObject.GetComponent<StateMachineMain>();
+        JBinstance = gameObject.GetComponent<JardimBehaviour>();
+        RestLevel = Random.Range(50f, 100f);
     }
 
     public void FixedUpdate()
     {
         if (RestLevel > 0f && Resting == false)
-        {
             RestLevel -= Time.fixedDeltaTime;
-        }
 
         else if (agenteinstance.State == 0)
         {
@@ -35,14 +31,14 @@ public class Descansar : MonoBehaviour
         }
 
         if (RestLevel < 100f && Resting)
-        {
-            //Debug.Log("Resting...");
-            RestLevel += (Random.Range(5f, 10f) * Time.fixedDeltaTime);
-        }
+            RestLevel += (Random.Range(10f, 15f) * Time.fixedDeltaTime);
+
         else if (RestLevel >= 100f)
         {
             RestLevel = 100f;
             Resting = false;
+            JBinstance.ZonaIdeal.Agentes--;
+            JBinstance.Going = false;
             JBinstance.JardimState = 0;
             agenteinstance.State = 0;
         }
@@ -50,9 +46,8 @@ public class Descansar : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.name == "Jardim1")
+        if (other.gameObject.name == "Jardim1" && RestLevel == 0)
         {
-            Resting = true;
             agent.isStopped = true;
             agent.ResetPath();
             JBinstance.JardimState = 1;

@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 50027758}
   - component: {fileID: 50027757}
   m_Layer: 0
-  m_Name: zona12
+  m_Name: zona13
   m_TagString: jardimtrigger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -152,7 +152,7 @@ Transform:
   m_LocalScale: {x: 5, y: 1, z: 5}
   m_Children: []
   m_Father: {fileID: 1821862693}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &50027757
 MonoBehaviour:
@@ -163,26 +163,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 50027755}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0fca189c31c792f43add6f6e8196a497, type: 3}
+  m_Script: {fileID: 11500000, guid: a668a5e01bd6af648a2adeb7593deca5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  zona1: 0
-  zona2: 0
-  zona3: 0
-  zona4: 0
-  zona5: 0
-  zona6: 0
-  zona7: 0
-  zona8: 0
-  zona9: 0
-  zona10: 0
-  zona11: 0
-  zona12: 1
-  zona13: 0
-  zona14: 0
-  zona15: 0
-  zona16: 0
-  NavAgent: {fileID: 232878445}
+  Agentes: 0
 --- !u!65 &50027758
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -213,7 +197,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 1bd8b9f1be1ecdc498eda408253aed22, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1037,25 +1021,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 129136b59972c5f44a259f948dee5039, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  JardimState: 2
-  NavAgent: {fileID: 232878445}
-  zona1: {fileID: 1371955539}
-  zona2: {fileID: 413083214}
-  zona3: {fileID: 0}
-  zona4: {fileID: 0}
-  zona5: {fileID: 0}
-  zona6: {fileID: 0}
-  zona7: {fileID: 0}
-  zona8: {fileID: 0}
-  zona9: {fileID: 0}
-  zona10: {fileID: 0}
-  zona11: {fileID: 0}
-  zona12: {fileID: 0}
-  zona13: {fileID: 0}
-  zona14: {fileID: 0}
-  zona15: {fileID: 0}
-  zona16: {fileID: 0}
-  jardim: 0
+  agent: {fileID: 232878445}
+  descansar: {fileID: 617036456769810111}
+  Zona:
+  - {fileID: 1217964348}
+  - {fileID: 282383056}
+  - {fileID: 366589485}
+  - {fileID: 980223488}
+  - {fileID: 1663915076}
+  - {fileID: 238473733}
+  - {fileID: 1032233665}
+  - {fileID: 1389683414}
+  - {fileID: 1371955541}
+  - {fileID: 413083216}
+  - {fileID: 345512149}
+  - {fileID: 1121611326}
+  - {fileID: 50027757}
+  - {fileID: 1346393458}
+  - {fileID: 1597874197}
+  - {fileID: 1193891738}
+  ZonaIdeal: {fileID: 1217964348}
+  JardimState: 0
+  Going: 0
 --- !u!114 &232878441
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1069,7 +1056,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   agent: {fileID: 232878445}
-  fome: {fileID: 0}
+  fome: {fileID: 617036456769810112}
   Mesa:
   - {fileID: 656331034}
   - {fileID: 362508629}
@@ -1107,7 +1094,7 @@ GameObject:
   - component: {fileID: 238473734}
   - component: {fileID: 238473733}
   m_Layer: 0
-  m_Name: zona3
+  m_Name: zona6
   m_TagString: jardimtrigger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1125,7 +1112,7 @@ Transform:
   m_LocalScale: {x: 5, y: 1, z: 5}
   m_Children: []
   m_Father: {fileID: 1821862693}
-  m_RootOrder: 2
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &238473733
 MonoBehaviour:
@@ -1136,26 +1123,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 238473731}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0fca189c31c792f43add6f6e8196a497, type: 3}
+  m_Script: {fileID: 11500000, guid: a668a5e01bd6af648a2adeb7593deca5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  zona1: 0
-  zona2: 0
-  zona3: 1
-  zona4: 0
-  zona5: 0
-  zona6: 0
-  zona7: 0
-  zona8: 0
-  zona9: 0
-  zona10: 0
-  zona11: 0
-  zona12: 0
-  zona13: 0
-  zona14: 0
-  zona15: 0
-  zona16: 0
-  NavAgent: {fileID: 232878445}
+  Agentes: 0
 --- !u!65 &238473734
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1186,7 +1157,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 1bd8b9f1be1ecdc498eda408253aed22, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1335,7 +1306,7 @@ GameObject:
   - component: {fileID: 282383057}
   - component: {fileID: 282383056}
   m_Layer: 0
-  m_Name: zona5
+  m_Name: zona2
   m_TagString: jardimtrigger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1353,7 +1324,7 @@ Transform:
   m_LocalScale: {x: 5, y: 1, z: 5}
   m_Children: []
   m_Father: {fileID: 1821862693}
-  m_RootOrder: 4
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &282383056
 MonoBehaviour:
@@ -1364,26 +1335,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 282383054}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0fca189c31c792f43add6f6e8196a497, type: 3}
+  m_Script: {fileID: 11500000, guid: a668a5e01bd6af648a2adeb7593deca5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  zona1: 0
-  zona2: 0
-  zona3: 0
-  zona4: 0
-  zona5: 1
-  zona6: 0
-  zona7: 0
-  zona8: 0
-  zona9: 0
-  zona10: 0
-  zona11: 0
-  zona12: 0
-  zona13: 0
-  zona14: 0
-  zona15: 0
-  zona16: 0
-  NavAgent: {fileID: 232878445}
+  Agentes: 0
 --- !u!65 &282383057
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1414,7 +1369,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 1bd8b9f1be1ecdc498eda408253aed22, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2139,7 +2094,7 @@ GameObject:
   - component: {fileID: 345512150}
   - component: {fileID: 345512149}
   m_Layer: 0
-  m_Name: zona10
+  m_Name: zona11
   m_TagString: jardimtrigger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2157,7 +2112,7 @@ Transform:
   m_LocalScale: {x: 5, y: 1, z: 5}
   m_Children: []
   m_Father: {fileID: 1821862693}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &345512149
 MonoBehaviour:
@@ -2168,26 +2123,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 345512147}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0fca189c31c792f43add6f6e8196a497, type: 3}
+  m_Script: {fileID: 11500000, guid: a668a5e01bd6af648a2adeb7593deca5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  zona1: 0
-  zona2: 0
-  zona3: 0
-  zona4: 0
-  zona5: 0
-  zona6: 0
-  zona7: 0
-  zona8: 0
-  zona9: 0
-  zona10: 1
-  zona11: 0
-  zona12: 0
-  zona13: 0
-  zona14: 0
-  zona15: 0
-  zona16: 0
-  NavAgent: {fileID: 232878445}
+  Agentes: 0
 --- !u!65 &345512150
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2218,7 +2157,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 1bd8b9f1be1ecdc498eda408253aed22, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2540,7 +2479,7 @@ GameObject:
   - component: {fileID: 366589486}
   - component: {fileID: 366589485}
   m_Layer: 0
-  m_Name: zona14
+  m_Name: zona3
   m_TagString: jardimtrigger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2558,7 +2497,7 @@ Transform:
   m_LocalScale: {x: 5, y: 1, z: 5}
   m_Children: []
   m_Father: {fileID: 1821862693}
-  m_RootOrder: 13
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &366589485
 MonoBehaviour:
@@ -2569,26 +2508,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 366589483}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0fca189c31c792f43add6f6e8196a497, type: 3}
+  m_Script: {fileID: 11500000, guid: a668a5e01bd6af648a2adeb7593deca5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  zona1: 0
-  zona2: 0
-  zona3: 0
-  zona4: 0
-  zona5: 0
-  zona6: 0
-  zona7: 0
-  zona8: 0
-  zona9: 0
-  zona10: 0
-  zona11: 0
-  zona12: 0
-  zona13: 0
-  zona14: 1
-  zona15: 0
-  zona16: 0
-  NavAgent: {fileID: 232878445}
+  Agentes: 0
 --- !u!65 &366589486
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2619,7 +2542,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 1bd8b9f1be1ecdc498eda408253aed22, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2877,7 +2800,7 @@ GameObject:
   - component: {fileID: 413083217}
   - component: {fileID: 413083216}
   m_Layer: 0
-  m_Name: zona2
+  m_Name: zona10
   m_TagString: jardimtrigger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2895,7 +2818,7 @@ Transform:
   m_LocalScale: {x: 5, y: 1, z: 5}
   m_Children: []
   m_Father: {fileID: 1821862693}
-  m_RootOrder: 1
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &413083216
 MonoBehaviour:
@@ -2906,26 +2829,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 413083214}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0fca189c31c792f43add6f6e8196a497, type: 3}
+  m_Script: {fileID: 11500000, guid: a668a5e01bd6af648a2adeb7593deca5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  zona1: 0
-  zona2: 1
-  zona3: 0
-  zona4: 0
-  zona5: 0
-  zona6: 0
-  zona7: 0
-  zona8: 0
-  zona9: 0
-  zona10: 0
-  zona11: 0
-  zona12: 0
-  zona13: 0
-  zona14: 0
-  zona15: 0
-  zona16: 0
-  NavAgent: {fileID: 0}
+  Agentes: 0
 --- !u!65 &413083217
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2956,7 +2863,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 1bd8b9f1be1ecdc498eda408253aed22, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -5482,7 +5389,7 @@ GameObject:
   - component: {fileID: 980223489}
   - component: {fileID: 980223488}
   m_Layer: 0
-  m_Name: zona8
+  m_Name: zona4
   m_TagString: jardimtrigger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5500,7 +5407,7 @@ Transform:
   m_LocalScale: {x: 5, y: 1, z: 5}
   m_Children: []
   m_Father: {fileID: 1821862693}
-  m_RootOrder: 7
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &980223488
 MonoBehaviour:
@@ -5511,26 +5418,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 980223486}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0fca189c31c792f43add6f6e8196a497, type: 3}
+  m_Script: {fileID: 11500000, guid: a668a5e01bd6af648a2adeb7593deca5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  zona1: 0
-  zona2: 0
-  zona3: 0
-  zona4: 0
-  zona5: 0
-  zona6: 0
-  zona7: 0
-  zona8: 1
-  zona9: 0
-  zona10: 0
-  zona11: 0
-  zona12: 0
-  zona13: 0
-  zona14: 0
-  zona15: 0
-  zona16: 0
-  NavAgent: {fileID: 232878445}
+  Agentes: 0
 --- !u!65 &980223489
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5561,7 +5452,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 1bd8b9f1be1ecdc498eda408253aed22, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -5747,7 +5638,7 @@ GameObject:
   - component: {fileID: 1032233666}
   - component: {fileID: 1032233665}
   m_Layer: 0
-  m_Name: zona13
+  m_Name: zona7
   m_TagString: jardimtrigger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5765,7 +5656,7 @@ Transform:
   m_LocalScale: {x: 5, y: 1, z: 5}
   m_Children: []
   m_Father: {fileID: 1821862693}
-  m_RootOrder: 12
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1032233665
 MonoBehaviour:
@@ -5776,26 +5667,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1032233663}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0fca189c31c792f43add6f6e8196a497, type: 3}
+  m_Script: {fileID: 11500000, guid: a668a5e01bd6af648a2adeb7593deca5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  zona1: 0
-  zona2: 0
-  zona3: 0
-  zona4: 0
-  zona5: 0
-  zona6: 0
-  zona7: 0
-  zona8: 0
-  zona9: 0
-  zona10: 0
-  zona11: 0
-  zona12: 0
-  zona13: 1
-  zona14: 0
-  zona15: 0
-  zona16: 0
-  NavAgent: {fileID: 232878445}
+  Agentes: 0
 --- !u!65 &1032233666
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5826,7 +5701,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 1bd8b9f1be1ecdc498eda408253aed22, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -6265,7 +6140,7 @@ GameObject:
   - component: {fileID: 1121611327}
   - component: {fileID: 1121611326}
   m_Layer: 0
-  m_Name: zona9
+  m_Name: zona12
   m_TagString: jardimtrigger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6283,7 +6158,7 @@ Transform:
   m_LocalScale: {x: 5, y: 1, z: 5}
   m_Children: []
   m_Father: {fileID: 1821862693}
-  m_RootOrder: 8
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1121611326
 MonoBehaviour:
@@ -6294,26 +6169,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1121611324}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0fca189c31c792f43add6f6e8196a497, type: 3}
+  m_Script: {fileID: 11500000, guid: a668a5e01bd6af648a2adeb7593deca5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  zona1: 0
-  zona2: 0
-  zona3: 0
-  zona4: 0
-  zona5: 0
-  zona6: 0
-  zona7: 0
-  zona8: 0
-  zona9: 1
-  zona10: 0
-  zona11: 0
-  zona12: 0
-  zona13: 0
-  zona14: 0
-  zona15: 0
-  zona16: 0
-  NavAgent: {fileID: 232878445}
+  Agentes: 0
 --- !u!65 &1121611327
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6344,7 +6203,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 1bd8b9f1be1ecdc498eda408253aed22, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -6679,7 +6538,7 @@ GameObject:
   - component: {fileID: 1193891739}
   - component: {fileID: 1193891738}
   m_Layer: 0
-  m_Name: zona4
+  m_Name: zona16
   m_TagString: jardimtrigger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6697,7 +6556,7 @@ Transform:
   m_LocalScale: {x: 5, y: 1, z: 5}
   m_Children: []
   m_Father: {fileID: 1821862693}
-  m_RootOrder: 3
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1193891738
 MonoBehaviour:
@@ -6708,26 +6567,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1193891736}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0fca189c31c792f43add6f6e8196a497, type: 3}
+  m_Script: {fileID: 11500000, guid: a668a5e01bd6af648a2adeb7593deca5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  zona1: 0
-  zona2: 0
-  zona3: 0
-  zona4: 1
-  zona5: 0
-  zona6: 0
-  zona7: 0
-  zona8: 0
-  zona9: 0
-  zona10: 0
-  zona11: 0
-  zona12: 0
-  zona13: 0
-  zona14: 0
-  zona15: 0
-  zona16: 0
-  NavAgent: {fileID: 232878445}
+  Agentes: 0
 --- !u!65 &1193891739
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6758,7 +6601,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 1bd8b9f1be1ecdc498eda408253aed22, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -6893,7 +6736,7 @@ GameObject:
   - component: {fileID: 1217964349}
   - component: {fileID: 1217964348}
   m_Layer: 0
-  m_Name: zona11
+  m_Name: zona1
   m_TagString: jardimtrigger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6911,7 +6754,7 @@ Transform:
   m_LocalScale: {x: 5, y: 1, z: 5}
   m_Children: []
   m_Father: {fileID: 1821862693}
-  m_RootOrder: 10
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1217964348
 MonoBehaviour:
@@ -6922,26 +6765,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1217964346}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0fca189c31c792f43add6f6e8196a497, type: 3}
+  m_Script: {fileID: 11500000, guid: a668a5e01bd6af648a2adeb7593deca5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  zona1: 0
-  zona2: 0
-  zona3: 0
-  zona4: 0
-  zona5: 0
-  zona6: 0
-  zona7: 0
-  zona8: 0
-  zona9: 0
-  zona10: 0
-  zona11: 1
-  zona12: 0
-  zona13: 0
-  zona14: 0
-  zona15: 0
-  zona16: 0
-  NavAgent: {fileID: 232878445}
+  Agentes: 0
 --- !u!65 &1217964349
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6972,7 +6799,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 1bd8b9f1be1ecdc498eda408253aed22, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -7871,7 +7698,7 @@ GameObject:
   - component: {fileID: 1346393459}
   - component: {fileID: 1346393458}
   m_Layer: 0
-  m_Name: zona6
+  m_Name: zona14
   m_TagString: jardimtrigger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7889,7 +7716,7 @@ Transform:
   m_LocalScale: {x: 5, y: 1, z: 5}
   m_Children: []
   m_Father: {fileID: 1821862693}
-  m_RootOrder: 5
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1346393458
 MonoBehaviour:
@@ -7900,26 +7727,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1346393456}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0fca189c31c792f43add6f6e8196a497, type: 3}
+  m_Script: {fileID: 11500000, guid: a668a5e01bd6af648a2adeb7593deca5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  zona1: 0
-  zona2: 0
-  zona3: 0
-  zona4: 0
-  zona5: 0
-  zona6: 1
-  zona7: 0
-  zona8: 0
-  zona9: 0
-  zona10: 0
-  zona11: 0
-  zona12: 0
-  zona13: 0
-  zona14: 0
-  zona15: 0
-  zona16: 0
-  NavAgent: {fileID: 232878445}
+  Agentes: 0
 --- !u!65 &1346393459
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7950,7 +7761,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 1bd8b9f1be1ecdc498eda408253aed22, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -7993,7 +7804,7 @@ GameObject:
   - component: {fileID: 1371955542}
   - component: {fileID: 1371955541}
   m_Layer: 0
-  m_Name: zona1
+  m_Name: zona9
   m_TagString: jardimtrigger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8011,7 +7822,7 @@ Transform:
   m_LocalScale: {x: 5, y: 1, z: 5}
   m_Children: []
   m_Father: {fileID: 1821862693}
-  m_RootOrder: 0
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1371955541
 MonoBehaviour:
@@ -8022,26 +7833,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1371955539}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0fca189c31c792f43add6f6e8196a497, type: 3}
+  m_Script: {fileID: 11500000, guid: a668a5e01bd6af648a2adeb7593deca5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  zona1: 1
-  zona2: 0
-  zona3: 0
-  zona4: 0
-  zona5: 0
-  zona6: 0
-  zona7: 0
-  zona8: 0
-  zona9: 0
-  zona10: 0
-  zona11: 0
-  zona12: 0
-  zona13: 0
-  zona14: 0
-  zona15: 0
-  zona16: 0
-  NavAgent: {fileID: 232878445}
+  Agentes: 0
 --- !u!65 &1371955542
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8072,7 +7867,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 1bd8b9f1be1ecdc498eda408253aed22, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -8115,7 +7910,7 @@ GameObject:
   - component: {fileID: 1389683415}
   - component: {fileID: 1389683414}
   m_Layer: 0
-  m_Name: zona7
+  m_Name: zona8
   m_TagString: jardimtrigger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8133,7 +7928,7 @@ Transform:
   m_LocalScale: {x: 5, y: 1, z: 5}
   m_Children: []
   m_Father: {fileID: 1821862693}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1389683414
 MonoBehaviour:
@@ -8144,26 +7939,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1389683412}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0fca189c31c792f43add6f6e8196a497, type: 3}
+  m_Script: {fileID: 11500000, guid: a668a5e01bd6af648a2adeb7593deca5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  zona1: 0
-  zona2: 0
-  zona3: 0
-  zona4: 0
-  zona5: 0
-  zona6: 0
-  zona7: 1
-  zona8: 0
-  zona9: 0
-  zona10: 0
-  zona11: 0
-  zona12: 0
-  zona13: 0
-  zona14: 0
-  zona15: 0
-  zona16: 0
-  NavAgent: {fileID: 232878445}
+  Agentes: 0
 --- !u!65 &1389683415
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8194,7 +7973,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 1bd8b9f1be1ecdc498eda408253aed22, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -8952,26 +8731,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1597874195}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0fca189c31c792f43add6f6e8196a497, type: 3}
+  m_Script: {fileID: 11500000, guid: a668a5e01bd6af648a2adeb7593deca5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  zona1: 0
-  zona2: 0
-  zona3: 0
-  zona4: 0
-  zona5: 0
-  zona6: 0
-  zona7: 0
-  zona8: 0
-  zona9: 0
-  zona10: 0
-  zona11: 0
-  zona12: 0
-  zona13: 0
-  zona14: 0
-  zona15: 1
-  zona16: 0
-  NavAgent: {fileID: 232878445}
+  Agentes: 0
 --- !u!65 &1597874198
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9002,7 +8765,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 1bd8b9f1be1ecdc498eda408253aed22, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -9292,7 +9055,7 @@ GameObject:
   - component: {fileID: 1663915077}
   - component: {fileID: 1663915076}
   m_Layer: 0
-  m_Name: zona16
+  m_Name: zona5
   m_TagString: jardimtrigger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9310,7 +9073,7 @@ Transform:
   m_LocalScale: {x: 5, y: 1, z: 5}
   m_Children: []
   m_Father: {fileID: 1821862693}
-  m_RootOrder: 15
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1663915076
 MonoBehaviour:
@@ -9321,26 +9084,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1663915074}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0fca189c31c792f43add6f6e8196a497, type: 3}
+  m_Script: {fileID: 11500000, guid: a668a5e01bd6af648a2adeb7593deca5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  zona1: 0
-  zona2: 0
-  zona3: 0
-  zona4: 0
-  zona5: 0
-  zona6: 0
-  zona7: 0
-  zona8: 0
-  zona9: 0
-  zona10: 0
-  zona11: 0
-  zona12: 0
-  zona13: 0
-  zona14: 0
-  zona15: 0
-  zona16: 1
-  NavAgent: {fileID: 232878445}
+  Agentes: 0
 --- !u!65 &1663915077
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9371,7 +9118,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 1bd8b9f1be1ecdc498eda408253aed22, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -10030,22 +9777,22 @@ Transform:
   m_LocalPosition: {x: -36.7, y: -1.4552002, z: 23.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 1217964347}
+  - {fileID: 282383055}
+  - {fileID: 366589484}
+  - {fileID: 980223487}
+  - {fileID: 1663915075}
+  - {fileID: 238473732}
+  - {fileID: 1032233664}
+  - {fileID: 1389683413}
   - {fileID: 1371955540}
   - {fileID: 413083215}
-  - {fileID: 238473732}
-  - {fileID: 1193891737}
-  - {fileID: 282383055}
-  - {fileID: 1346393457}
-  - {fileID: 1389683413}
-  - {fileID: 980223487}
-  - {fileID: 1121611325}
   - {fileID: 345512148}
-  - {fileID: 1217964347}
+  - {fileID: 1121611325}
   - {fileID: 50027756}
-  - {fileID: 1032233664}
-  - {fileID: 366589484}
+  - {fileID: 1346393457}
   - {fileID: 1597874196}
-  - {fileID: 1663915075}
+  - {fileID: 1193891737}
   m_Father: {fileID: 0}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -11576,6 +11323,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 617036455641393630, guid: 9378e5dc3a3587141bbcf407d0ca8044,
+        type: 3}
+      propertyPath: agent
+      value: 
+      objectReference: {fileID: 232878445}
+    - target: {fileID: 617036455641393630, guid: 9378e5dc3a3587141bbcf407d0ca8044,
+        type: 3}
+      propertyPath: FBinstance
+      value: 
+      objectReference: {fileID: 232878441}
+    - target: {fileID: 617036455641393631, guid: 9378e5dc3a3587141bbcf407d0ca8044,
+        type: 3}
+      propertyPath: agent
+      value: 
+      objectReference: {fileID: 232878445}
+    - target: {fileID: 617036455641393631, guid: 9378e5dc3a3587141bbcf407d0ca8044,
+        type: 3}
+      propertyPath: JBinstance
+      value: 
+      objectReference: {fileID: 232878440}
     - target: {fileID: 617036455641393632, guid: 9378e5dc3a3587141bbcf407d0ca8044,
         type: 3}
       propertyPath: m_StoppingDistance
@@ -11703,3 +11470,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9378e5dc3a3587141bbcf407d0ca8044, type: 3}
+--- !u!114 &617036456769810111 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 617036455641393631, guid: 9378e5dc3a3587141bbcf407d0ca8044,
+    type: 3}
+  m_PrefabInstance: {fileID: 617036456769810110}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 232878439}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb89e3f3874b18d4f8b978fa4ba09f8d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &617036456769810112 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 617036455641393630, guid: 9378e5dc3a3587141bbcf407d0ca8044,
+    type: 3}
+  m_PrefabInstance: {fileID: 617036456769810110}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 232878439}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c0829a8aaab5ca4b97c2868dda71450, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

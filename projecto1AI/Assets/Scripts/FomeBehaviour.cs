@@ -29,7 +29,6 @@ public class FomeBehaviour : MonoBehaviour
             case 2:
                 break;
             default:
-                //não metas nada aqui
                 break;
         }
     }
@@ -39,8 +38,6 @@ public class FomeBehaviour : MonoBehaviour
         if (Going == false)
         {
             CheckMesa();
-            if (MesaIdeal.Agents >= 6)
-                CheckMesa();
             CheckCadeira(MesaIdeal);
             MesaIdeal.Agents++;
             CadeiraIdeal.Ocupado = true;
@@ -53,11 +50,9 @@ public class FomeBehaviour : MonoBehaviour
     {
         MesaIdeal = Mesa[0];
 
-        for (int i = 1; i < 6; i++)
-        {
+        for (int i = 1; i < Mesa.Length; i++)
             if ((MesaIdeal.Agents - Mesa[i].Agents) > 0 || MesaIdeal.Agents >= 6)
                 MesaIdeal = Mesa[i];
-        }
         return MesaIdeal;
     }
 
@@ -78,8 +73,6 @@ public class FomeBehaviour : MonoBehaviour
     public void OnTriggerEnter(Collider other)
     {
         if (other == CadeiraIdeal.GetComponent<Collider>())
-        {
             fome.Eating = true;
-        }
     }
 }
