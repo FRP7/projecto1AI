@@ -12,7 +12,6 @@ public class FomeBehaviour : MonoBehaviour
     public Cadeira CadeiraIdeal;
     public int FomeState;
     public bool Going = false;
-    public bool Full = false;
 
     void Start()
     {

@@ -1081,7 +1081,6 @@ MonoBehaviour:
   CadeiraIdeal: {fileID: 545943619}
   FomeState: 0
   Going: 0
-  Full: 0
 --- !u!195 &232878445 stripped
 NavMeshAgent:
   m_CorrespondingSourceObject: {fileID: 617036455641393632, guid: 9378e5dc3a3587141bbcf407d0ca8044,
@@ -1309,6 +1308,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 246550712}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &246550717
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 246550712}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b4b9d345d889134699445500b5196f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Ocupado: 0
 --- !u!1 &282383054
 GameObject:
   m_ObjectHideFlags: 0
@@ -3159,6 +3171,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 514832365}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &514832370
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 514832365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b4b9d345d889134699445500b5196f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Ocupado: 0
 --- !u!1 &519256536
 GameObject:
   m_ObjectHideFlags: 0
@@ -6213,6 +6238,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1118367217}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1118367222
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1118367217}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b4b9d345d889134699445500b5196f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Ocupado: 0
 --- !u!1 &1121611324
 GameObject:
   m_ObjectHideFlags: 0
@@ -10542,6 +10580,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1944799626}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1944799631
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1944799626}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b4b9d345d889134699445500b5196f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Ocupado: 0
 --- !u!1 &1954325135
 GameObject:
   m_ObjectHideFlags: 0
