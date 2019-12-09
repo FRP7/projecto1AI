@@ -169,6 +169,7 @@ GameObject:
   - component: {fileID: 87390544}
   - component: {fileID: 87390543}
   - component: {fileID: 87390542}
+  - component: {fileID: 87390545}
   m_Layer: 0
   m_Name: Banco6
   m_TagString: Untagged
@@ -249,6 +250,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 87390540}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &87390545
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 87390540}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b4b9d345d889134699445500b5196f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Ocupado: 0
 --- !u!1 &92813726
 GameObject:
   m_ObjectHideFlags: 0
@@ -354,6 +368,7 @@ GameObject:
   - component: {fileID: 102677687}
   - component: {fileID: 102677686}
   - component: {fileID: 102677685}
+  - component: {fileID: 102677688}
   m_Layer: 0
   m_Name: Banco6
   m_TagString: Untagged
@@ -434,6 +449,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 102677683}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &102677688
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 102677683}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b4b9d345d889134699445500b5196f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Ocupado: 0
 --- !u!1 &113687077
 GameObject:
   m_ObjectHideFlags: 0
@@ -446,6 +474,7 @@ GameObject:
   - component: {fileID: 113687081}
   - component: {fileID: 113687080}
   - component: {fileID: 113687079}
+  - component: {fileID: 113687082}
   m_Layer: 0
   m_Name: Banco5
   m_TagString: Untagged
@@ -526,6 +555,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 113687077}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &113687082
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 113687077}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b4b9d345d889134699445500b5196f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Ocupado: 0
 --- !u!1 &159180016
 GameObject:
   m_ObjectHideFlags: 0
@@ -761,6 +803,7 @@ GameObject:
   - component: {fileID: 218713836}
   - component: {fileID: 218713835}
   - component: {fileID: 218713834}
+  - component: {fileID: 218713837}
   m_Layer: 0
   m_Name: Banco4
   m_TagString: Untagged
@@ -841,6 +884,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 218713832}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &218713837
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 218713832}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b4b9d345d889134699445500b5196f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Ocupado: 0
 --- !u!1 &232878439 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 617036455641393638, guid: 9378e5dc3a3587141bbcf407d0ca8044,
@@ -875,108 +931,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1e20d30d88660543b1634c24b21f76c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FomeState: 0
   agent: {fileID: 232878445}
+  fome: {fileID: 0}
   Mesa:
-  - Objeto: {fileID: 2018243144}
-    Cadeira:
-    - Objeto: {fileID: 545943614}
-      Ocupado: 0
-    - Objeto: {fileID: 1701311713}
-      Ocupado: 0
-    - Objeto: {fileID: 1151059606}
-      Ocupado: 0
-    - Objeto: {fileID: 283655293}
-      Ocupado: 0
-    - Objeto: {fileID: 554182549}
-      Ocupado: 0
-    - Objeto: {fileID: 87390540}
-      Ocupado: 0
-    Agents: 0
-  - Objeto: {fileID: 877372919}
-    Cadeira:
-    - Objeto: {fileID: 1844399056}
-      Ocupado: 0
-    - Objeto: {fileID: 2061764938}
-      Ocupado: 0
-    - Objeto: {fileID: 642741395}
-      Ocupado: 0
-    - Objeto: {fileID: 610317133}
-      Ocupado: 0
-    - Objeto: {fileID: 113687077}
-      Ocupado: 0
-    - Objeto: {fileID: 380722851}
-      Ocupado: 0
-    Agents: 0
-  - Objeto: {fileID: 159180016}
-    Cadeira:
-    - Objeto: {fileID: 1118367217}
-      Ocupado: 0
-    - Objeto: {fileID: 1058765550}
-      Ocupado: 0
-    - Objeto: {fileID: 669365135}
-      Ocupado: 0
-    - Objeto: {fileID: 1620776704}
-      Ocupado: 0
-    - Objeto: {fileID: 514832365}
-      Ocupado: 0
-    - Objeto: {fileID: 1485080730}
-      Ocupado: 0
-    Agents: 0
-  - Objeto: {fileID: 75190061}
-    Cadeira:
-    - Objeto: {fileID: 1323651756}
-      Ocupado: 0
-    - Objeto: {fileID: 536114353}
-      Ocupado: 0
-    - Objeto: {fileID: 1290829500}
-      Ocupado: 0
-    - Objeto: {fileID: 1944799626}
-      Ocupado: 0
-    - Objeto: {fileID: 246550712}
-      Ocupado: 0
-    - Objeto: {fileID: 648909975}
-      Ocupado: 0
-    Agents: 0
-  - Objeto: {fileID: 810547045}
-    Cadeira:
-    - Objeto: {fileID: 1277555685}
-      Ocupado: 0
-    - Objeto: {fileID: 2065804717}
-      Ocupado: 0
-    - Objeto: {fileID: 2054042957}
-      Ocupado: 0
-    - Objeto: {fileID: 1822271860}
-      Ocupado: 0
-    - Objeto: {fileID: 1286193595}
-      Ocupado: 0
-    - Objeto: {fileID: 606821708}
-      Ocupado: 0
-    Agents: 0
-  - Objeto: {fileID: 809399853}
-    Cadeira:
-    - Objeto: {fileID: 1420491422}
-      Ocupado: 0
-    - Objeto: {fileID: 526083744}
-      Ocupado: 0
-    - Objeto: {fileID: 711232207}
-      Ocupado: 0
-    - Objeto: {fileID: 218713832}
-      Ocupado: 0
-    - Objeto: {fileID: 1280018974}
-      Ocupado: 0
-    - Objeto: {fileID: 102677683}
-      Ocupado: 0
-    Agents: 0
-  Cadeira: []
-  MesaIdeal:
-    Objeto: {fileID: 0}
-    Cadeira: []
-    Agents: 0
-  CadeiraIdeal:
-    Objeto: {fileID: 0}
-    Ocupado: 0
+  - {fileID: 656331034}
+  - {fileID: 362508629}
+  - {fileID: 594894134}
+  - {fileID: 309713449}
+  - {fileID: 1934423206}
+  - {fileID: 1488993993}
+  MesaIdeal: {fileID: 656331034}
+  CadeiraIdeal: {fileID: 545943619}
+  FomeState: 0
   Going: 0
+  Full: 0
 --- !u!195 &232878445 stripped
 NavMeshAgent:
   m_CorrespondingSourceObject: {fileID: 617036455641393632, guid: 9378e5dc3a3587141bbcf407d0ca8044,
@@ -1001,6 +969,7 @@ GameObject:
   - component: {fileID: 246550716}
   - component: {fileID: 246550715}
   - component: {fileID: 246550714}
+  - component: {fileID: 246550717}
   m_Layer: 0
   m_Name: Banco5
   m_TagString: Untagged
@@ -1081,6 +1050,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 246550712}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &246550717
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 246550712}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b4b9d345d889134699445500b5196f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Ocupado: 0
 --- !u!1 &283655293
 GameObject:
   m_ObjectHideFlags: 0
@@ -1093,6 +1075,7 @@ GameObject:
   - component: {fileID: 283655297}
   - component: {fileID: 283655296}
   - component: {fileID: 283655295}
+  - component: {fileID: 283655298}
   m_Layer: 0
   m_Name: Banco4
   m_TagString: Untagged
@@ -1173,6 +1156,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 283655293}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &283655298
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 283655293}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b4b9d345d889134699445500b5196f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Ocupado: 0
 --- !u!1 &284068995
 GameObject:
   m_ObjectHideFlags: 0
@@ -1663,7 +1659,7 @@ GameObject:
   - component: {fileID: 309713450}
   - component: {fileID: 309713449}
   m_Layer: 0
-  m_Name: Mesa
+  m_Name: Mesa4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1683,19 +1679,26 @@ Transform:
   m_Father: {fileID: 75190062}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &309713449
-BoxCollider:
+--- !u!114 &309713449
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 309713447}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d34bcb4e5dea89745915d211e3a78785, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Cadeira:
+  - {fileID: 1323651761}
+  - {fileID: 536114358}
+  - {fileID: 1290829505}
+  - {fileID: 1944799631}
+  - {fileID: 246550717}
+  - {fileID: 648909980}
+  Agents: 0
 --- !u!23 &309713450
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1806,7 +1809,7 @@ GameObject:
   - component: {fileID: 362508630}
   - component: {fileID: 362508629}
   m_Layer: 0
-  m_Name: Mesa
+  m_Name: Mesa2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1826,19 +1829,26 @@ Transform:
   m_Father: {fileID: 877372920}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &362508629
-BoxCollider:
+--- !u!114 &362508629
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 362508627}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d34bcb4e5dea89745915d211e3a78785, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Cadeira:
+  - {fileID: 1844399061}
+  - {fileID: 2061764943}
+  - {fileID: 642741400}
+  - {fileID: 610317138}
+  - {fileID: 113687082}
+  - {fileID: 380722856}
+  Agents: 0
 --- !u!23 &362508630
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1897,6 +1907,7 @@ GameObject:
   - component: {fileID: 380722855}
   - component: {fileID: 380722854}
   - component: {fileID: 380722853}
+  - component: {fileID: 380722856}
   m_Layer: 0
   m_Name: Banco6
   m_TagString: Untagged
@@ -1977,6 +1988,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 380722851}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &380722856
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 380722851}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b4b9d345d889134699445500b5196f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Ocupado: 0
 --- !u!1 &389228586
 GameObject:
   m_ObjectHideFlags: 0
@@ -2283,6 +2307,7 @@ GameObject:
   - component: {fileID: 514832369}
   - component: {fileID: 514832368}
   - component: {fileID: 514832367}
+  - component: {fileID: 514832370}
   m_Layer: 0
   m_Name: Banco5
   m_TagString: Untagged
@@ -2363,6 +2388,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 514832365}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &514832370
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 514832365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b4b9d345d889134699445500b5196f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Ocupado: 0
 --- !u!1 &522747169
 GameObject:
   m_ObjectHideFlags: 0
@@ -2416,6 +2454,7 @@ GameObject:
   - component: {fileID: 526083748}
   - component: {fileID: 526083747}
   - component: {fileID: 526083746}
+  - component: {fileID: 526083749}
   m_Layer: 0
   m_Name: Banco2
   m_TagString: Untagged
@@ -2496,6 +2535,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 526083744}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &526083749
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 526083744}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b4b9d345d889134699445500b5196f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Ocupado: 0
 --- !u!1 &536114353
 GameObject:
   m_ObjectHideFlags: 0
@@ -2508,6 +2560,7 @@ GameObject:
   - component: {fileID: 536114357}
   - component: {fileID: 536114356}
   - component: {fileID: 536114355}
+  - component: {fileID: 536114358}
   m_Layer: 0
   m_Name: Banco2
   m_TagString: Untagged
@@ -2588,6 +2641,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 536114353}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &536114358
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 536114353}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b4b9d345d889134699445500b5196f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Ocupado: 0
 --- !u!1 &545943614
 GameObject:
   m_ObjectHideFlags: 0
@@ -2600,6 +2666,7 @@ GameObject:
   - component: {fileID: 545943618}
   - component: {fileID: 545943617}
   - component: {fileID: 545943616}
+  - component: {fileID: 545943619}
   m_Layer: 0
   m_Name: Banco1
   m_TagString: Untagged
@@ -2680,6 +2747,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 545943614}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &545943619
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 545943614}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b4b9d345d889134699445500b5196f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Ocupado: 0
 --- !u!1 &554182549
 GameObject:
   m_ObjectHideFlags: 0
@@ -2692,6 +2772,7 @@ GameObject:
   - component: {fileID: 554182553}
   - component: {fileID: 554182552}
   - component: {fileID: 554182551}
+  - component: {fileID: 554182554}
   m_Layer: 0
   m_Name: Banco5
   m_TagString: Untagged
@@ -2772,6 +2853,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 554182549}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &554182554
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 554182549}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b4b9d345d889134699445500b5196f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Ocupado: 0
 --- !u!1 &579015247
 GameObject:
   m_ObjectHideFlags: 0
@@ -2970,7 +3064,7 @@ GameObject:
   - component: {fileID: 594894135}
   - component: {fileID: 594894134}
   m_Layer: 0
-  m_Name: Mesa
+  m_Name: Mesa3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2990,19 +3084,26 @@ Transform:
   m_Father: {fileID: 159180017}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &594894134
-BoxCollider:
+--- !u!114 &594894134
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 594894132}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d34bcb4e5dea89745915d211e3a78785, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Cadeira:
+  - {fileID: 1118367222}
+  - {fileID: 1058765555}
+  - {fileID: 669365140}
+  - {fileID: 1620776709}
+  - {fileID: 514832370}
+  - {fileID: 1485080735}
+  Agents: 0
 --- !u!23 &594894135
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3061,6 +3162,7 @@ GameObject:
   - component: {fileID: 606821712}
   - component: {fileID: 606821711}
   - component: {fileID: 606821710}
+  - component: {fileID: 606821713}
   m_Layer: 0
   m_Name: Banco6
   m_TagString: Untagged
@@ -3141,6 +3243,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 606821708}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &606821713
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 606821708}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b4b9d345d889134699445500b5196f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Ocupado: 0
 --- !u!1 &610317133
 GameObject:
   m_ObjectHideFlags: 0
@@ -3153,6 +3268,7 @@ GameObject:
   - component: {fileID: 610317137}
   - component: {fileID: 610317136}
   - component: {fileID: 610317135}
+  - component: {fileID: 610317138}
   m_Layer: 0
   m_Name: Banco4
   m_TagString: Untagged
@@ -3233,6 +3349,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 610317133}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &610317138
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 610317133}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b4b9d345d889134699445500b5196f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Ocupado: 0
 --- !u!1 &642741395
 GameObject:
   m_ObjectHideFlags: 0
@@ -3245,6 +3374,7 @@ GameObject:
   - component: {fileID: 642741399}
   - component: {fileID: 642741398}
   - component: {fileID: 642741397}
+  - component: {fileID: 642741400}
   m_Layer: 0
   m_Name: Banco3
   m_TagString: Untagged
@@ -3325,6 +3455,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 642741395}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &642741400
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 642741395}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b4b9d345d889134699445500b5196f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Ocupado: 0
 --- !u!1 &648909975
 GameObject:
   m_ObjectHideFlags: 0
@@ -3337,6 +3480,7 @@ GameObject:
   - component: {fileID: 648909979}
   - component: {fileID: 648909978}
   - component: {fileID: 648909977}
+  - component: {fileID: 648909980}
   m_Layer: 0
   m_Name: Banco6
   m_TagString: Untagged
@@ -3417,6 +3561,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 648909975}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &648909980
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 648909975}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b4b9d345d889134699445500b5196f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Ocupado: 0
 --- !u!1 &656331032
 GameObject:
   m_ObjectHideFlags: 0
@@ -3430,7 +3587,7 @@ GameObject:
   - component: {fileID: 656331035}
   - component: {fileID: 656331034}
   m_Layer: 0
-  m_Name: Mesa
+  m_Name: Mesa1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3450,19 +3607,26 @@ Transform:
   m_Father: {fileID: 2018243145}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &656331034
-BoxCollider:
+--- !u!114 &656331034
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 656331032}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d34bcb4e5dea89745915d211e3a78785, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Cadeira:
+  - {fileID: 545943619}
+  - {fileID: 1701311718}
+  - {fileID: 1151059611}
+  - {fileID: 283655298}
+  - {fileID: 554182554}
+  - {fileID: 87390545}
+  Agents: 0
 --- !u!23 &656331035
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3613,6 +3777,7 @@ GameObject:
   - component: {fileID: 669365139}
   - component: {fileID: 669365138}
   - component: {fileID: 669365137}
+  - component: {fileID: 669365140}
   m_Layer: 0
   m_Name: Banco3
   m_TagString: Untagged
@@ -3693,6 +3858,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 669365135}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &669365140
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 669365135}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b4b9d345d889134699445500b5196f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Ocupado: 0
 --- !u!1 &695358555
 GameObject:
   m_ObjectHideFlags: 0
@@ -3889,6 +4067,7 @@ GameObject:
   - component: {fileID: 711232211}
   - component: {fileID: 711232210}
   - component: {fileID: 711232209}
+  - component: {fileID: 711232212}
   m_Layer: 0
   m_Name: Banco3
   m_TagString: Untagged
@@ -3969,6 +4148,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 711232207}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &711232212
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 711232207}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b4b9d345d889134699445500b5196f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Ocupado: 0
 --- !u!1 &753705365
 GameObject:
   m_ObjectHideFlags: 0
@@ -4502,6 +4694,7 @@ GameObject:
   - component: {fileID: 1058765554}
   - component: {fileID: 1058765553}
   - component: {fileID: 1058765552}
+  - component: {fileID: 1058765555}
   m_Layer: 0
   m_Name: Banco2
   m_TagString: Untagged
@@ -4582,6 +4775,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1058765550}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1058765555
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1058765550}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b4b9d345d889134699445500b5196f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Ocupado: 0
 --- !u!1 &1107812838
 GameObject:
   m_ObjectHideFlags: 0
@@ -4778,6 +4984,7 @@ GameObject:
   - component: {fileID: 1118367221}
   - component: {fileID: 1118367220}
   - component: {fileID: 1118367219}
+  - component: {fileID: 1118367222}
   m_Layer: 0
   m_Name: Banco1
   m_TagString: Untagged
@@ -4858,6 +5065,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1118367217}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1118367222
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1118367217}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b4b9d345d889134699445500b5196f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Ocupado: 0
 --- !u!1 &1151059606
 GameObject:
   m_ObjectHideFlags: 0
@@ -4870,6 +5090,7 @@ GameObject:
   - component: {fileID: 1151059610}
   - component: {fileID: 1151059609}
   - component: {fileID: 1151059608}
+  - component: {fileID: 1151059611}
   m_Layer: 0
   m_Name: Banco3
   m_TagString: Untagged
@@ -4950,6 +5171,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1151059606}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1151059611
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1151059606}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b4b9d345d889134699445500b5196f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Ocupado: 0
 --- !u!1 &1164006775
 GameObject:
   m_ObjectHideFlags: 0
@@ -5381,6 +5615,7 @@ GameObject:
   - component: {fileID: 1277555689}
   - component: {fileID: 1277555688}
   - component: {fileID: 1277555687}
+  - component: {fileID: 1277555690}
   m_Layer: 0
   m_Name: Banco1
   m_TagString: Untagged
@@ -5461,6 +5696,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1277555685}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1277555690
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1277555685}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b4b9d345d889134699445500b5196f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Ocupado: 0
 --- !u!1 &1280018974
 GameObject:
   m_ObjectHideFlags: 0
@@ -5473,6 +5721,7 @@ GameObject:
   - component: {fileID: 1280018978}
   - component: {fileID: 1280018977}
   - component: {fileID: 1280018976}
+  - component: {fileID: 1280018979}
   m_Layer: 0
   m_Name: Banco5
   m_TagString: Untagged
@@ -5553,6 +5802,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1280018974}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1280018979
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1280018974}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b4b9d345d889134699445500b5196f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Ocupado: 0
 --- !u!1 &1286193595
 GameObject:
   m_ObjectHideFlags: 0
@@ -5565,6 +5827,7 @@ GameObject:
   - component: {fileID: 1286193599}
   - component: {fileID: 1286193598}
   - component: {fileID: 1286193597}
+  - component: {fileID: 1286193600}
   m_Layer: 0
   m_Name: Banco5
   m_TagString: Untagged
@@ -5645,6 +5908,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1286193595}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1286193600
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1286193595}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b4b9d345d889134699445500b5196f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Ocupado: 0
 --- !u!1 &1290829500
 GameObject:
   m_ObjectHideFlags: 0
@@ -5657,6 +5933,7 @@ GameObject:
   - component: {fileID: 1290829504}
   - component: {fileID: 1290829503}
   - component: {fileID: 1290829502}
+  - component: {fileID: 1290829505}
   m_Layer: 0
   m_Name: Banco3
   m_TagString: Untagged
@@ -5737,6 +6014,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1290829500}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1290829505
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1290829500}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b4b9d345d889134699445500b5196f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Ocupado: 0
 --- !u!1 &1308069714
 GameObject:
   m_ObjectHideFlags: 0
@@ -5842,6 +6132,7 @@ GameObject:
   - component: {fileID: 1323651760}
   - component: {fileID: 1323651759}
   - component: {fileID: 1323651758}
+  - component: {fileID: 1323651761}
   m_Layer: 0
   m_Name: Banco1
   m_TagString: Untagged
@@ -5922,6 +6213,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1323651756}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1323651761
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1323651756}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b4b9d345d889134699445500b5196f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Ocupado: 0
 --- !u!1 &1343960703
 GameObject:
   m_ObjectHideFlags: 0
@@ -6135,6 +6439,7 @@ GameObject:
   - component: {fileID: 1420491426}
   - component: {fileID: 1420491425}
   - component: {fileID: 1420491424}
+  - component: {fileID: 1420491427}
   m_Layer: 0
   m_Name: Banco1
   m_TagString: Untagged
@@ -6215,6 +6520,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1420491422}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1420491427
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1420491422}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b4b9d345d889134699445500b5196f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Ocupado: 0
 --- !u!1 &1435961982
 GameObject:
   m_ObjectHideFlags: 0
@@ -6337,7 +6655,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   agenteprefab: {fileID: 232878449}
-  agentnumber: 1
+  agentnumber: 100
 --- !u!4 &1478144545
 Transform:
   m_ObjectHideFlags: 0
@@ -6364,6 +6682,7 @@ GameObject:
   - component: {fileID: 1485080734}
   - component: {fileID: 1485080733}
   - component: {fileID: 1485080732}
+  - component: {fileID: 1485080735}
   m_Layer: 0
   m_Name: Banco6
   m_TagString: Untagged
@@ -6444,6 +6763,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1485080730}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1485080735
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1485080730}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b4b9d345d889134699445500b5196f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Ocupado: 0
 --- !u!1 &1488993991
 GameObject:
   m_ObjectHideFlags: 0
@@ -6457,7 +6789,7 @@ GameObject:
   - component: {fileID: 1488993994}
   - component: {fileID: 1488993993}
   m_Layer: 0
-  m_Name: Mesa
+  m_Name: Mesa6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6477,19 +6809,26 @@ Transform:
   m_Father: {fileID: 809399854}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &1488993993
-BoxCollider:
+--- !u!114 &1488993993
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1488993991}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d34bcb4e5dea89745915d211e3a78785, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Cadeira:
+  - {fileID: 1420491427}
+  - {fileID: 526083749}
+  - {fileID: 711232212}
+  - {fileID: 218713837}
+  - {fileID: 1280018979}
+  - {fileID: 102677688}
+  Agents: 0
 --- !u!23 &1488993994
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6835,6 +7174,7 @@ GameObject:
   - component: {fileID: 1620776708}
   - component: {fileID: 1620776707}
   - component: {fileID: 1620776706}
+  - component: {fileID: 1620776709}
   m_Layer: 0
   m_Name: Banco4
   m_TagString: Untagged
@@ -6915,6 +7255,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1620776704}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1620776709
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1620776704}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b4b9d345d889134699445500b5196f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Ocupado: 0
 --- !u!1 &1654747989
 GameObject:
   m_ObjectHideFlags: 0
@@ -7128,6 +7481,7 @@ GameObject:
   - component: {fileID: 1701311717}
   - component: {fileID: 1701311716}
   - component: {fileID: 1701311715}
+  - component: {fileID: 1701311718}
   m_Layer: 0
   m_Name: Banco2
   m_TagString: Untagged
@@ -7208,6 +7562,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1701311713}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1701311718
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1701311713}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b4b9d345d889134699445500b5196f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Ocupado: 0
 --- !u!1 &1740114764
 GameObject:
   m_ObjectHideFlags: 0
@@ -7623,6 +7990,7 @@ GameObject:
   - component: {fileID: 1822271864}
   - component: {fileID: 1822271863}
   - component: {fileID: 1822271862}
+  - component: {fileID: 1822271865}
   m_Layer: 0
   m_Name: Banco4
   m_TagString: Untagged
@@ -7703,6 +8071,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1822271860}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1822271865
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1822271860}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b4b9d345d889134699445500b5196f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Ocupado: 0
 --- !u!1 &1844399056
 GameObject:
   m_ObjectHideFlags: 0
@@ -7715,6 +8096,7 @@ GameObject:
   - component: {fileID: 1844399060}
   - component: {fileID: 1844399059}
   - component: {fileID: 1844399058}
+  - component: {fileID: 1844399061}
   m_Layer: 0
   m_Name: Banco1
   m_TagString: Untagged
@@ -7795,6 +8177,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1844399056}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1844399061
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1844399056}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b4b9d345d889134699445500b5196f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Ocupado: 0
 --- !u!1 &1892015315
 GameObject:
   m_ObjectHideFlags: 0
@@ -7843,7 +8238,7 @@ GameObject:
   - component: {fileID: 1934423207}
   - component: {fileID: 1934423206}
   m_Layer: 0
-  m_Name: Mesa
+  m_Name: Mesa5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7863,19 +8258,26 @@ Transform:
   m_Father: {fileID: 810547046}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &1934423206
-BoxCollider:
+--- !u!114 &1934423206
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1934423204}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d34bcb4e5dea89745915d211e3a78785, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Cadeira:
+  - {fileID: 1277555690}
+  - {fileID: 2065804722}
+  - {fileID: 2054042962}
+  - {fileID: 1822271865}
+  - {fileID: 1286193600}
+  - {fileID: 606821713}
+  Agents: 0
 --- !u!23 &1934423207
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -8026,6 +8428,7 @@ GameObject:
   - component: {fileID: 1944799630}
   - component: {fileID: 1944799629}
   - component: {fileID: 1944799628}
+  - component: {fileID: 1944799631}
   m_Layer: 0
   m_Name: Banco4
   m_TagString: Untagged
@@ -8106,6 +8509,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1944799626}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1944799631
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1944799626}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b4b9d345d889134699445500b5196f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Ocupado: 0
 --- !u!1 &2018243144
 GameObject:
   m_ObjectHideFlags: 0
@@ -8434,6 +8850,7 @@ GameObject:
   - component: {fileID: 2054042961}
   - component: {fileID: 2054042960}
   - component: {fileID: 2054042959}
+  - component: {fileID: 2054042962}
   m_Layer: 0
   m_Name: Banco3
   m_TagString: Untagged
@@ -8514,6 +8931,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2054042957}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &2054042962
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2054042957}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b4b9d345d889134699445500b5196f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Ocupado: 0
 --- !u!1 &2061764938
 GameObject:
   m_ObjectHideFlags: 0
@@ -8526,6 +8956,7 @@ GameObject:
   - component: {fileID: 2061764942}
   - component: {fileID: 2061764941}
   - component: {fileID: 2061764940}
+  - component: {fileID: 2061764943}
   m_Layer: 0
   m_Name: Banco2
   m_TagString: Untagged
@@ -8606,6 +9037,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2061764938}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &2061764943
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2061764938}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b4b9d345d889134699445500b5196f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Ocupado: 0
 --- !u!1 &2065804717
 GameObject:
   m_ObjectHideFlags: 0
@@ -8618,6 +9062,7 @@ GameObject:
   - component: {fileID: 2065804721}
   - component: {fileID: 2065804720}
   - component: {fileID: 2065804719}
+  - component: {fileID: 2065804722}
   m_Layer: 0
   m_Name: Banco2
   m_TagString: Untagged
@@ -8698,6 +9143,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2065804717}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &2065804722
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2065804717}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b4b9d345d889134699445500b5196f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Ocupado: 0
 --- !u!1 &2092239696
 GameObject:
   m_ObjectHideFlags: 0

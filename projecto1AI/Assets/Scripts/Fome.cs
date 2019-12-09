@@ -13,10 +13,10 @@ public class Fome : MonoBehaviour
     public FomeBehaviour FBinstance;
 
     private void Start() {
-        agent = gameObject.GetComponent<NavMeshAgent>();
-        agenteinstance = gameObject.GetComponent<StateMachineMain>();
-        HungerLevel = Random.Range(10f, 30f);
-        FBinstance = gameObject.GetComponent<FomeBehaviour>();
+        agent = GetComponent<NavMeshAgent>();
+        agenteinstance = GetComponent<StateMachineMain>();
+        FBinstance = GetComponent<FomeBehaviour>();
+        HungerLevel = Random.Range(10f, 100f);
     }
 
     public void FixedUpdate()
@@ -32,15 +32,18 @@ public class Fome : MonoBehaviour
             agenteinstance.State = 1;
         }
 
-        if (HungerLevel < 60f && Eating)
+        if (HungerLevel < 100f && Eating)
         {
             //Debug.Log("Eating...");
-            HungerLevel += (Random.Range(5f, 10f) * Time.fixedDeltaTime);
+            HungerLevel += (Random.Range(5f, 20f) * Time.fixedDeltaTime);
         }
-        else if (HungerLevel >= 60f)
+        else if (HungerLevel >= 100f)
         {
-            HungerLevel = 60f;
+            HungerLevel = 100f;
             Eating = false;
+            FBinstance.MesaIdeal.Agents--;
+            FBinstance.CadeiraIdeal.Ocupado = false;
+            FBinstance.Going = false;
             FBinstance.FomeState = 0;
             agenteinstance.State = 0;
         }
@@ -48,7 +51,7 @@ public class Fome : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.name == "Restaurante1" && HungerLevel == 0)
+        if (other.name == "Restaurante1" && HungerLevel == 0)
         {
             agent.isStopped = true;
             agent.ResetPath();

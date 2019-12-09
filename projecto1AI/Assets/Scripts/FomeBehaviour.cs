@@ -5,20 +5,19 @@ using UnityEngine.AI;
 
 public class FomeBehaviour : MonoBehaviour
 {
-    public int FomeState;
     public NavMeshAgent agent;
+    public Fome fome;
     public Mesa[] Mesa;
-    public Cadeira[] Cadeira;
     public Mesa MesaIdeal;
     public Cadeira CadeiraIdeal;
-    public bool Going;
-
-    private Fome fome;
+    public int FomeState;
+    public bool Going = false;
+    public bool Full = false;
 
     void Start()
     {
-        agent = gameObject.GetComponent<NavMeshAgent>();
-        fome = gameObject.GetComponent<Fome>();
+        agent = GetComponent<NavMeshAgent>();
+        fome = GetComponent<Fome>();
     }
 
     private void FixedUpdate()
@@ -26,23 +25,9 @@ public class FomeBehaviour : MonoBehaviour
         switch (FomeState)
         {
             case 1:
-                if (Going == false)
-                {
-                    CheckMesa();
-                    CheckCadeira(MesaIdeal);
-                    agent.destination = CadeiraIdeal.Objeto.transform.position;
-                    Debug.Log(MesaIdeal.Objeto.name + " " + CadeiraIdeal.Objeto.name + " " + CadeiraIdeal.Objeto.transform.position);
-                    MesaIdeal.Agents++;
-                    CadeiraIdeal.Ocupado = true;
-                    Going = true;
-                }
-                if (agent.destination == CadeiraIdeal.Objeto.transform.position)
-                    fome.Eating = true;
+                GoToZone();
                 break;
             case 2:
-                MesaIdeal.Agents--;
-                CadeiraIdeal.Ocupado = false;
-                fome.Eating = false;
                 break;
             default:
                 //não metas nada aqui
@@ -50,12 +35,30 @@ public class FomeBehaviour : MonoBehaviour
         }
     }
 
+    public void GoToZone()
+    {
+        if (Going == false)
+        {
+            CheckMesa();
+            if (MesaIdeal.Agents >= 6)
+                CheckMesa();
+            CheckCadeira(MesaIdeal);
+            MesaIdeal.Agents++;
+            CadeiraIdeal.Ocupado = true;
+            Going = true;
+        }
+        agent.destination = CadeiraIdeal.transform.position;
+    }
+
     public Mesa CheckMesa()
     {
         MesaIdeal = Mesa[0];
+
         for (int i = 1; i < 6; i++)
-            if ((MesaIdeal.Agents - Mesa[i].Agents) > 0)
+        {
+            if ((MesaIdeal.Agents - Mesa[i].Agents) > 0 || MesaIdeal.Agents >= 6)
                 MesaIdeal = Mesa[i];
+        }
         return MesaIdeal;
     }
 
@@ -72,19 +75,12 @@ public class FomeBehaviour : MonoBehaviour
         }
         return CadeiraIdeal;
     }
-}
 
-[System.Serializable]
-public class Mesa
-{
-    public GameObject Objeto;
-    public Cadeira[] Cadeira;
-    public int Agents = 0;
-}
-
-[System.Serializable]
-public class Cadeira
-{
-    public GameObject Objeto;
-    public bool Ocupado = false;
+    public void OnTriggerEnter(Collider other)
+    {
+        if (other == CadeiraIdeal.GetComponent<Collider>())
+        {
+            fome.Eating = true;
+        }
+    }
 }
