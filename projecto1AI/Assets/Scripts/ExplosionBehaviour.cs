@@ -21,7 +21,7 @@ public class ExplosionBehaviour : MonoBehaviour
     }
 
     public void Explosion() {
-        Debug.Log("Explodindo");
+        //Debug.Log("Explodindo");
         NavMeshinstance.destination = Exits.transform.position;
     }
 }

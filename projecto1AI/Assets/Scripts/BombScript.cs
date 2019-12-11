@@ -13,7 +13,7 @@ public class BombScript : MonoBehaviour
 
     private void Update() {
         if (Input.GetKeyDown(KeyCode.Space)) {
-            print("Click explosão");
+            //print("Click explosão");
             //Instantiate(Bomb, new Vector3(0f, 2.5f, 0f), Quaternion.identity);
             //STMinstance.State = 3;
             foreach (GameObject STMinstance in GameObject.FindGameObjectsWithTag("Agent")) {
