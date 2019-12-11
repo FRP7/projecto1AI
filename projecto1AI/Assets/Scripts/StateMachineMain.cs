@@ -10,12 +10,15 @@ public class StateMachineMain : MonoBehaviour
     public GameObject Restaurante1;
     public GameObject Jardim1;
     public NavMeshAgent agent;
+    public ExplosionBehaviour Explosioninstance;
     public int State;
     
     int palco;
 
     void Start() {
         agent = gameObject.GetComponent<NavMeshAgent>();
+
+        Explosioninstance = gameObject.GetComponent<ExplosionBehaviour>();
 
         palco = Random.Range(0, 2);
     }
@@ -27,6 +30,10 @@ public class StateMachineMain : MonoBehaviour
                 break;
             case 2:
                 Jardim();
+                break;
+            case 3:
+                ///explosão
+                Explosioninstance.Explosion();
                 break;
             default:
                 Concerto();
