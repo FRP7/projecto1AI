@@ -1,2 +1,5 @@
 apanhar todos os scripts em todos os objectos:
 stackoverflow.com/questions/14517733/accessing-a-script-on-all-objects-with-tag-in-unity
+
+destruir gameobject com tag mais facilmente:
+https://forum.unity.com/threads/destroy-gameobject-with-tag.64856/

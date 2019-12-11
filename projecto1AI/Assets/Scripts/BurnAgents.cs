@@ -11,3 +11,5 @@ public class BurnAgents : MonoBehaviour
         }
     }
 }
+
+///https://forum.unity.com/threads/destroy-gameobject-with-tag.64856/
