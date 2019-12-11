@@ -1,0 +1,2 @@
+apanhar todos os scripts em todos os objectos:
+stackoverflow.com/questions/14517733/accessing-a-script-on-all-objects-with-tag-in-unity
