@@ -12,9 +12,10 @@ GameObject:
   - component: {fileID: 617036455641393637}
   - component: {fileID: 617036455641393636}
   - component: {fileID: 617036455641393639}
-  - component: {fileID: 617036455641393632}
-  - component: {fileID: 617036455641393633}
   - component: {fileID: 617036455641393635}
+  - component: {fileID: 617036455641393632}
+  - component: {fileID: 7745159028826483505}
+  - component: {fileID: 617036455641393633}
   - component: {fileID: 617036455641393630}
   - component: {fileID: 617036455641393631}
   m_Layer: 0
@@ -98,6 +99,22 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &617036455641393635
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 617036455641393638}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!195 &617036455641393632
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -120,6 +137,21 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!114 &7745159028826483505
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 617036455641393638}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c34d1dc92124364a8afce20ade68895, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  agente: {fileID: 0}
+  NomePrimeiro: []
+  NomeSegundo: []
 --- !u!114 &617036455641393633
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -132,30 +164,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca925ad3424c71e498cf308937e57017, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  goal1: {fileID: 0}
-  goal11: {fileID: 0}
-  goal2: {fileID: 0}
-  goal22: {fileID: 0}
-  goal0: {fileID: 0}
-  goal00: {fileID: 0}
+  Palco1: {fileID: 0}
+  Palco2: {fileID: 0}
+  Restaurante1: {fileID: 0}
+  Jardim1: {fileID: 0}
   agent: {fileID: 617036455641393632}
+  Explosioninstance: {fileID: 0}
   State: 0
---- !u!54 &617036455641393635
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 617036455641393638}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &617036455641393630
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -168,7 +183,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c0829a8aaab5ca4b97c2868dda71450, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  agent: {fileID: 0}
   agenteinstance: {fileID: 617036455641393633}
+  FBinstance: {fileID: 0}
   HungerLevel: 15
   Eating: 0
 --- !u!114 &617036455641393631
@@ -183,6 +200,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb89e3f3874b18d4f8b978fa4ba09f8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  agent: {fileID: 0}
   agenteinstance: {fileID: 617036455641393633}
+  JBinstance: {fileID: 0}
   RestLevel: 15
   Resting: 0
