@@ -4,25 +4,29 @@ using UnityEngine;
 
 public class Agente : MonoBehaviour
 {
-    public Agente agente;
-    public Fome fome;
-    public Descansar descansar;
+    public Material Verde;
+    public Material Azul;
     public GameObject UIName;
     public GameObject UIHunger;
     public GameObject UIEnergy;
 
-    public string[] NomePrimeiro;
-    public string[] NomeSegundo;
     public int HungerLevel;
     public int RestLevel;
-
+    public string[] NomePrimeiro;
+    public string[] NomeSegundo;
 
     private void OnMouseDown()
     {
-        UIName.GetComponent<TextMesh>().text = agente.name;
-        HungerLevel = (int)fome.HungerLevel;
+        UIName.GetComponent<TextMesh>().text = gameObject.name;
+        HungerLevel = (int)gameObject.GetComponent<Fome>().HungerLevel;
         UIHunger.GetComponent<TextMesh>().text = $"Fome :    {HungerLevel.ToString()}";
-        RestLevel = (int)descansar.RestLevel;
+        RestLevel = (int)gameObject.GetComponent<Descansar>().RestLevel;
         UIEnergy.GetComponent<TextMesh>().text = $"Energia : {RestLevel.ToString()}";
+        gameObject.GetComponent<Renderer>().material = Verde;
+    }
+
+    private void OnMouseUp()
+    {
+        gameObject.GetComponent<Renderer>().material = Azul;
     }
 }
