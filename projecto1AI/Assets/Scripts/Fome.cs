@@ -20,27 +20,36 @@ public class Fome : MonoBehaviour
 
     public void FixedUpdate()
     {
-        if (HungerLevel > 0f && Eating == false)
-            HungerLevel -= Time.fixedDeltaTime;
-
-        else if (agenteinstance.State == 0)
+        if (Input.GetKeyDown(KeyCode.Space))
         {
-            HungerLevel = 0f;
-            agenteinstance.State = 1;
+            FBinstance.FomeState = 0;
+            agenteinstance.State = 3;
         }
 
-        if (HungerLevel < 100f && Eating)
-            HungerLevel += (Random.Range(5f, 10f) * Time.fixedDeltaTime);
-
-        else if (HungerLevel >= 100f)
+        if (agenteinstance.State != 3)
         {
-            HungerLevel = 100f;
-            Eating = false;
-            FBinstance.MesaIdeal.Agents--;
-            FBinstance.CadeiraIdeal.Ocupado = false;
-            FBinstance.Going = false;
-            FBinstance.FomeState = 0;
-            agenteinstance.State = 0;
+            if (HungerLevel > 0f && Eating == false)
+                HungerLevel -= Time.fixedDeltaTime;
+
+            else if (agenteinstance.State == 0)
+            {
+                HungerLevel = 0f;
+                agenteinstance.State = 1;
+            }
+
+            if (HungerLevel < 100f && Eating)
+                HungerLevel += (Random.Range(5f, 10f) * Time.fixedDeltaTime);
+
+            else if (HungerLevel >= 100f)
+            {
+                HungerLevel = 100f;
+                Eating = false;
+                FBinstance.MesaIdeal.Agents--;
+                FBinstance.CadeiraIdeal.Ocupado = false;
+                FBinstance.Going = false;
+                FBinstance.FomeState = 0;
+                agenteinstance.State = 0;
+            }
         }
     }
 

@@ -9,16 +9,14 @@ public class StateMachineMain : MonoBehaviour
     public GameObject Palco2;
     public GameObject Restaurante1;
     public GameObject Jardim1;
+    public GameObject Exit1;
     public NavMeshAgent agent;
-    public ExplosionBehaviour Explosioninstance;
     public int State;
     
     int palco;
 
     void Start() {
         agent = gameObject.GetComponent<NavMeshAgent>();
-
-        Explosioninstance = gameObject.GetComponent<ExplosionBehaviour>();
 
         palco = Random.Range(0, 2);
     }
@@ -32,8 +30,7 @@ public class StateMachineMain : MonoBehaviour
                 Jardim();
                 break;
             case 3:
-                ///explosão
-                Explosioninstance.Explosion();
+                Explosion();
                 break;
             default:
                 Concerto();
@@ -50,8 +47,13 @@ public class StateMachineMain : MonoBehaviour
         return;
     }
 
+    public void Explosion()
+    {
+        agent.destination = Exit1.transform.position;
+        return;
+    }
+
     public void Concerto() {
-        ///sorteia qual é o palco que vai
         if(palco > 0) {
             agent.destination = Palco1.transform.position;
         }

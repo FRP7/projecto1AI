@@ -5,19 +5,16 @@ using UnityEngine.AI;
 
 public class ExplosionBehaviour : MonoBehaviour
 {
-    public StateMachineMain STMinstance;
-    public NavMeshAgent NavMeshinstance;
-    
-    public GameObject Agent;
-    public GameObject Bomb;
-    public GameObject Exits;
+    public StateMachineMain agenteinstance;
 
-    private void Start() {
-        STMinstance = gameObject.GetComponent<StateMachineMain>();
-        NavMeshinstance = gameObject.GetComponent<NavMeshAgent>();
+    public void Start()
+    {
+        agenteinstance = gameObject.GetComponent<StateMachineMain>();
     }
 
-    public void Explosion() {
-        NavMeshinstance.destination = Exits.transform.position;
+    public void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Space))
+            agenteinstance.State = 3;
     }
 }

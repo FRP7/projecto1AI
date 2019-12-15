@@ -21,26 +21,35 @@ public class Descansar : MonoBehaviour
 
     public void FixedUpdate()
     {
-        if (RestLevel > 0f && Resting == false)
-            RestLevel -= Time.fixedDeltaTime;
-
-        else if (agenteinstance.State == 0)
+        if (Input.GetKeyDown(KeyCode.Space))
         {
-            RestLevel = 0f;
-            agenteinstance.State = 2;
+            JBinstance.JardimState = 0;
+            agenteinstance.State = 3;
         }
 
-        if (RestLevel < 100f && Resting)
-            RestLevel += (Random.Range(10f, 15f) * Time.fixedDeltaTime);
-
-        else if (RestLevel >= 100f)
+        if (agenteinstance.State != 3)
         {
-            RestLevel = 100f;
-            Resting = false;
-            JBinstance.ZonaIdeal.Agentes--;
-            JBinstance.Going = false;
-            JBinstance.JardimState = 0;
-            agenteinstance.State = 0;
+            if (RestLevel > 0f && Resting == false)
+                RestLevel -= Time.fixedDeltaTime;
+
+            else if (agenteinstance.State == 0)
+            {
+                RestLevel = 0f;
+                agenteinstance.State = 2;
+            }
+
+            if (RestLevel < 100f && Resting)
+                RestLevel += (Random.Range(10f, 15f) * Time.fixedDeltaTime);
+
+            else if (RestLevel >= 100f)
+            {
+                RestLevel = 100f;
+                Resting = false;
+                JBinstance.ZonaIdeal.Agentes--;
+                JBinstance.Going = false;
+                JBinstance.JardimState = 0;
+                agenteinstance.State = 0;
+            }
         }
     }
 
