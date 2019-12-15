@@ -1068,18 +1068,6 @@ MonoBehaviour:
   CadeiraIdeal: {fileID: 545943619}
   FomeState: 0
   Going: 0
---- !u!114 &232878442 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 617036455641393633, guid: 9378e5dc3a3587141bbcf407d0ca8044,
-    type: 3}
-  m_PrefabInstance: {fileID: 617036456769810110}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 232878439}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ca925ad3424c71e498cf308937e57017, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!195 &232878445 stripped
 NavMeshAgent:
   m_CorrespondingSourceObject: {fileID: 617036455641393632, guid: 9378e5dc3a3587141bbcf407d0ca8044,
@@ -1098,11 +1086,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09c0f764e8fb57543a1813487da80814, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  STMinstance: {fileID: 232878442}
-  NavMeshinstance: {fileID: 232878445}
-  Agent: {fileID: 232878439}
-  Bomb: {fileID: 1237443648}
-  Exits: {fileID: 679498326}
+  agenteinstance: {fileID: 0}
 --- !u!4 &232878449 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 617036455641393634, guid: 9378e5dc3a3587141bbcf407d0ca8044,
@@ -4504,7 +4488,7 @@ GameObject:
   - component: {fileID: 679498327}
   - component: {fileID: 679498331}
   m_Layer: 0
-  m_Name: Exit
+  m_Name: Exit1
   m_TagString: Exit
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11971,7 +11955,12 @@ PrefabInstance:
         type: 3}
       propertyPath: Explosioninstance
       value: 
-      objectReference: {fileID: 232878448}
+      objectReference: {fileID: 0}
+    - target: {fileID: 617036455641393633, guid: 9378e5dc3a3587141bbcf407d0ca8044,
+        type: 3}
+      propertyPath: Exit1
+      value: 
+      objectReference: {fileID: 679498326}
     - target: {fileID: 617036455641393634, guid: 9378e5dc3a3587141bbcf407d0ca8044,
         type: 3}
       propertyPath: m_LocalPosition.x
