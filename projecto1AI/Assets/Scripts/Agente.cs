@@ -9,11 +9,26 @@ public class Agente : MonoBehaviour
     public GameObject UIName;
     public GameObject UIHunger;
     public GameObject UIEnergy;
+    public GameObject UIDead;
+    public GameObject UIEscape;
+    public Exit EscapeExit;
+    public Explosion ExplosionDead;
+    public Fire FireDead;
 
     public int HungerLevel;
     public int RestLevel;
+    public int Killed = 0;
+    public int Escape = 0;
     public string[] NomePrimeiro;
     public string[] NomeSegundo;
+
+    public void Update()
+    {
+        Killed = ExplosionDead.Kill + FireDead.Kill;
+        Escape = EscapeExit.Escape;
+        UIDead.GetComponent<TextMesh>().text = $"Killed :    {Killed.ToString()}";
+        UIEscape.GetComponent<TextMesh>().text = $"Escaped : {Escape.ToString()}";
+    }
 
     private void OnMouseDown()
     {
