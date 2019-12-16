@@ -129,15 +129,15 @@ Após o utilizador carregar na tecla &quot;Space&quot; uma explosão vai ocorrer
 
 ### **Resultados e discussão**
 
-1. 1)Às vezes no início da simulação, alguns agentes vinham primeiro para lugares onde não deviam estar por algum tempo e depois voltavam à zona inicial (os palcos). Não sabemos o que causa isso, mas é capaz de ser um bug na NavMesh do Unity e até agora não nos foi prejudicial.
+1. Às vezes no início da simulação, alguns agentes vinham primeiro para lugares onde não deviam estar por algum tempo e depois voltavam à zona inicial (os palcos). Não sabemos o que causa isso, mas é capaz de ser um bug na NavMesh do Unity e até agora não nos foi prejudicial.
 
-1. 2)Por motivos que desconhecemos, os agentes andam meio enterrados no chão durante a simulação. Já experimentamos retirar o RigidBody deles ou mexer nos Colliders do chão mas infelizmente não tivemos sucesso. Especulamos que seja de novo um bug na NavMesh do Unity e verdade seja dita, nunca foi realmente prejudicial na simulação aliás, é difícil de se perceber isso quando vê a build.
+1. Por motivos que desconhecemos, os agentes andam meio enterrados no chão durante a simulação. Já experimentamos retirar o RigidBody deles ou mexer nos Colliders do chão mas infelizmente não tivemos sucesso. Especulamos que seja de novo um bug na NavMesh do Unity e verdade seja dita, nunca foi realmente prejudicial na simulação aliás, é difícil de se perceber isso quando vê a build.
 
-1. 3)Na zona dos palcos, os agentes que estão a assistir aos espectáculos ficam a girar de volta do centro do objecto que têm de seguir. Achámos divertido porque apesar de não ser suposto à primeira isso acontecer parece bastante com a dança do &quot;Mosh Pit&quot; que é muito comum em concertos de Metal e Hardcore.
+1. Na zona dos palcos, os agentes que estão a assistir aos espectáculos ficam a girar de volta do centro do objecto que têm de seguir. Achámos divertido porque apesar de não ser suposto à primeira isso acontecer parece bastante com a dança do &quot;Mosh Pit&quot; que é muito comum em concertos de Metal e Hardcore.
 
-1. 4)Achamos o movimento dos agentes bastante semelhante ao das formigas mas também pode resultar da falta de modelos 3D realistas.
+1. Achamos o movimento dos agentes bastante semelhante ao das formigas mas também pode resultar da falta de modelos 3D realistas.
 
-1. 5)Para melhor análise da simulação, achamos que 100 agentes é o número ideal. Em termos de realismo, 200 agentes é o número ideal, se forem mais, quantos mais forem mais estranho fica a simulação por exemplo, os agentes excessivos no palco posicionam-se de maneira estranha.
+1. Para melhor análise da simulação, achamos que 100 agentes é o número ideal. Em termos de realismo, 200 agentes é o número ideal, se forem mais, quantos mais forem mais estranho fica a simulação por exemplo, os agentes excessivos no palco posicionam-se de maneira estranha.
 
 
 
