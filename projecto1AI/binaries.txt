@@ -1,4 +1,5 @@
-Windows: http://www.mediafire.com/file/szzrlpfnxru7oxc/projecto1AI_build.zip/file
+Windows: 
+http://www.mediafire.com/file/6n2zlyxf485dgrq/projecto1AI_windows.zip/file
 
 Linux:
-http://www.mediafire.com/file/yjd670wy5l9p7uw/projecto1AI_build_linux.zip/file
+http://www.mediafire.com/file/n94y9qoc8fovyy5/projecto1AI_linux.zip/file

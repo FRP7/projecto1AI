@@ -133,7 +133,7 @@ Após o utilizador carregar na tecla &quot;Space&quot; uma explosão vai ocorrer
 
 1. Por motivos que desconhecemos, os agentes andam meio enterrados no chão durante a simulação. Já experimentamos retirar o RigidBody deles ou mexer nos Colliders do chão mas infelizmente não tivemos sucesso. Especulamos que seja de novo um bug na NavMesh do Unity e verdade seja dita, nunca foi realmente prejudicial na simulação aliás, é difícil de se perceber isso quando vê a build.
 
-1. Na zona dos palcos, os agentes que estão a assistir aos espectáculos ficam a girar de volta do centro do objecto que têm de seguir. Achámos divertido porque apesar de não ser suposto à primeira isso acontecer parece bastante com a dança do &quot;Mosh Pit&quot; que é muito comum em concertos de Metal e Hardcore.
+1. Na zona dos palcos, os agentes que estão a assistir aos espectáculos ficam a girar de volta do centro do objecto que têm de seguir. Achámos divertido porque apesar de não ser suposto à primeira isso acontecer parece bastante com a dança do &quot;Mosh Pit&quot; que é muito comum em concertos de Metal e Hardcore. Só lembramos desse pormenor após uma conversa que o Francisco Pires teve com o Rui Martins em que o Rui mencionou que ele conseguiu implementar no seu projecto uma dança Mosh Pit.
 
 1. Achamos o movimento dos agentes bastante semelhante ao das formigas mas também pode resultar da falta de modelos 3D realistas.
 
@@ -158,6 +158,8 @@ Agradecemos à documentação C# da Microsoft: [https://docs.microsoft.com/en-us
 Agradecemos à documentação C# do Unity:
 
 [https://docs.unity3d.com/ScriptReference/](https://docs.unity3d.com/ScriptReference/)
+
+Agradecemos ao colega Rui Martins por nos ter lembrado através de uma conversa que os nossos agentes estavam a fazer a dança Mosh Pit.
 
 E por fim agradecemos ao professor Nuno Fachada por nos ter desafiado com este projecto e pela matéria e código exemplo que tem fornecido.
 
